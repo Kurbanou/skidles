@@ -1,6 +1,8 @@
 /* main-css */
 @import url(../../assets/fonts/roboto.css);
 @import url(../../assets/css/main_page.css);
+@import url(../../assets/css/nav.css);
+
 
 
 :root {
@@ -12,24 +14,28 @@
 
 
 
-*, *:before, *:after {
+*,
+:before,
+:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    color: var(--Black_blue);
 }
 
 .wrapper {
     width: 100%;
     max-width: 1260px;
     padding: 0 30px;
+    margin: 0 auto;
 }
 
 @media (max-width:640px){
@@ -44,20 +50,7 @@ body{
     }
 }
 
-header {
-    position: relative;
-    position: absolute;
-}
-
-a {
-    font-family: inherit;
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-}
-
-nav li {
-    list-style: none;
+.post {
+    margin: 20px 0;
+    text-indent: 30px;
 }
