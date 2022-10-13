@@ -2,6 +2,45 @@
 .intro {
     width: 100%;
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner__menu {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro__inner{
+    display: grid;
+    width: 98%;
+    max-width: 50vh;
+    height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.intro__inner_item {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.intro__inner_item:first-child {
+    order: 1;
+}
+
+.intro__inner_item.visible {
+    z-index: 1;
 }
 
 
@@ -14,4 +53,6 @@
 
 
 }
+
+
 /* /about */

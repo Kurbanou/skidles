@@ -2,6 +2,7 @@
 @import url(../../assets/fonts/roboto.css);
 @import url(../../assets/css/main_page.css);
 @import url(../../assets/css/nav.css);
+@import url(../../assets/css/tab_bar.css);
 
 
 
@@ -14,9 +15,9 @@
     --burger-color:rgba(123, 156, 121, 0.98);
     --links-menu: #ffffff;
     --activelink: blue;
+    --bgColorMenu: #333B41;
+    --duration: 0.7s;
 }
-
-
 
 *,
 :before,

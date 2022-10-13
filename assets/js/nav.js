@@ -33,8 +33,6 @@ export function nav(){
         }
     });
 
-    console.log(links)
-
     burgerMenu.addEventListener('click',burger);
 }
 
