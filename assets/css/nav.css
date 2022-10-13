@@ -1,11 +1,11 @@
 /* navigation */
 
 /* header + class = 'blog' -бургер меню на все разрешения */
-:root{
+/* :root{
   --burger-color:rgba(123, 156, 121, 0.98);
   --links-menu: #fff;
   --activelink: blue;
-}
+} */
 
 body.open{
 overflow: hidden;
