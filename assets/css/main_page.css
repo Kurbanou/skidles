@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .inner__menu {
@@ -33,14 +34,18 @@
     justify-content: center;
     align-items: center;
     grid-area: 1 / 1 / 2 / 2;
+    opacity: 0;
+    transition: all .3s linear;
 }
+
+
 
 .intro__inner_item:first-child {
     order: 1;
 }
 
 .intro__inner_item.visible {
-    z-index: 1;
+    opacity: 1;
 }
 
 
