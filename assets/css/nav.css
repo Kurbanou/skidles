@@ -2,7 +2,7 @@
 :root{
   --burger-color:rgba(123, 156, 121, 0.98);
   --links-menu: #fff;
-  --activelink: red;
+  --activelink: blue;
 }
 
 
@@ -31,7 +31,7 @@ header a.active {
 }
 
 .header__inner {
-  padding: 24px;
+  padding: 30px 0;
 }
 
 header li {
@@ -51,26 +51,43 @@ header li {
 
 
 
-
 @media (max-width:640px) {
 
   /* Burger */
+  .burger {
+    padding: 10px;
+    background: rgba(255, 255, 255, .9);          
+    position: fixed;
+    top: 20px;
+    left:20px;
+  }
+
+  .open .burger {
+    background: transparent;
+  }
+
+  @media (max-width:400px){
+    .burger {
+      top: 10px;  
+      right: 10px;
+    } 
+  }
+
   .menu-toggle {
     display: block;
     opacity: 0.6;
     background-color: transparent;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: relative;   
     border: none;
     width: 36px;
     height: 30px;
     outline: none;
     transition: opacity 0.2s ease-out;
     cursor: pointer;
+    user-select: none;
   }
 
-  .menu-toggle:before {
+  .menu-toggle:before {    
     content: "";
     position: absolute;
     top: 0;
@@ -79,7 +96,8 @@ header li {
     left: 0;
     margin: auto;
     right: auto;
-    width: 100%;
+    width: 36px;
+    height: 30px;   
     background: linear-gradient(to bottom, var(--burger-color), var(--burger-color) 20%, transparent 20%, transparent 40%, var(--burger-color) 40%, var(--burger-color) 60%, transparent 60%, transparent 80%, var(--burger-color) 80%, var(--burger-color) 100%);
     transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
   }
@@ -259,7 +277,7 @@ header li {
   .open main {
   transform: scale(0.92);
   transition: transform 0.2s 0.41s ease-out;
-  }
+  }  
 
   /* Animation navigation */
   @-webkit-keyframes menu-animation {
