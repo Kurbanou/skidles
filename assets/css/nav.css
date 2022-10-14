@@ -10,10 +10,12 @@ header {
   width: 100%;
   position: absolute;
   z-index: 10;
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--Black_blue);
+  color: white;
 }
 
 header a {

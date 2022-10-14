@@ -11,10 +11,12 @@
     --Gray: #767474;
     --Gray_smoky: #ABABAB;
     --Light_gray: #F1F3F2;
-    --Blog_fon: #fcfcf4;
-    --burger-color:rgba(123, 156, 121, 0.98);
-    --links-menu: #ffffff;
-    --activelink: blue;
+    --Yellow: #FFEE2E;
+    --Rad: #D31414;    
+    --Green:#4B9200;
+    --burger-color:#F9804B;
+    --links-menu: #FDFDFF;
+    --activelink: #F9804B;
     --bgColorMenu: #333B41;
     --duration: 0.7s;
 }
