@@ -10,6 +10,10 @@ header {
   width: 100%;
   position: absolute;
   z-index: 10;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header a {
@@ -21,9 +25,6 @@ header a {
   line-height: 140%;
 }
 
-.header__inner {
-  padding: 30px 0;
-}
 
 header li {
   list-style: none;
@@ -337,13 +338,13 @@ header li {
 }
 /* ************************************************************* */
 /* main scale */
-main {
+/* main {
   transition: 0.2s ease-out;
  }
  .open main {
  transform: scale(0.92);
  transition: transform 0.2s 0.41s ease-out;
- }
+ } */
 
 
 /* Animation navigation */
@@ -460,7 +461,4 @@ main {
   }
 }
 
-header a.active,
-.blog a.active {
-  color: var(--activelink);
-}
+ 
