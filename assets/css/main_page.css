@@ -156,6 +156,13 @@
     border-left: 20px solid var(--activelink);
 }
 
+.baza__otdyha-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
 
 
 

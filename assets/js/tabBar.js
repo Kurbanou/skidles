@@ -11,7 +11,7 @@ export function tabBar() {
     const menuBorder = menu.querySelector(".menu__border");
     const inners = document.querySelectorAll('.intro__inner_item');
     let activeItem = menu.querySelector(".active");
-    const bgc = ['#F9804B','#D31414','#767474','#FFEE2E','#4B9200'];
+    const bgc = ['#F9804B','#D31414','#F9B04B','#3871A1','#4B9200'];
     const intro = document.querySelector('.intro');
 
 
