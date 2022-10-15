@@ -5,7 +5,7 @@ export const svg =  `<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/
                 <style type="text/css">
                     .st0{fill:none;stroke:#000;stroke-width:5;stroke-miterlimit:10;stroke-dasharray:4240;}
                     .st1{fill:#000; animation: check_c_o 1000ms linear 1 normal forwards}@keyframes check_c_o { 0% {opacity: 0} 79% {opacity: 0} 80% {opacity: 0.3} 100% {opacity: 1}}
-                    .st11{fill:#000; animation: check_c_o 1000ms linear 1 normal forwards}@keyframes check_c_o { 0% {opacity: 0} 79% {opacity: 0} 80% {opacity: 0.3} 100% {opacity: 1}}          
+                    .st11{fill:#000; animation: check_c_o 1000ms linear 1 normal forwards}@keyframes check_c_o { 0% {opacity: 0} 79% {opacity: 0} 80% {opacity: 0.3} 100% {opacity: 1}}
                 </style>
                 <path id="kontur_1_"  stroke-dashoffset="0" class="st0" d="M54.7801819,113.1949844V54.4999771h58.6949463 M622.7801514,113.1948013V54.4999771
                 h-58.6949463 M564.0853271,622.5h58.6948242v-58.6948242 M54.7801819,563.8050537V622.5h58.6948242 M641.0201416,364

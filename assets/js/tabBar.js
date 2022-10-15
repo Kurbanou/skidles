@@ -12,6 +12,7 @@ export function tabBar() {
     const inners = document.querySelectorAll('.intro__inner_item');
     let activeItem = menu.querySelector(".active");
     const bgc = ['#F9804B','#D31414','#767474','#FFEE2E','#4B9200'];
+    const intro = document.querySelector('.intro');
 
 
     inners[0].innerHTML = svg;
@@ -21,19 +22,26 @@ export function tabBar() {
     }
 
     function clickItem(item, index) {
-        inners[0].innerHTML = svg
 
         if (index === 0) {
             inners[0].innerHTML = svg;
         }
 
         menu.style.removeProperty("--timeOut");
+
         if (activeItem == item) return;
 
         if (activeItem) {
-            activeItem.classList.remove("active");
-            inners.forEach(el => el.classList.remove('visible'));
+            const li = intro.querySelectorAll('li');
+            if (li) {
+                li.forEach(el => el.style.transitionDelay = '0s')
+            }
 
+
+            activeItem.classList.remove("active");
+            inners.forEach(el =>  {
+                el.classList.remove('visible');
+            });
         }
 
         item.classList.add("active");
@@ -41,8 +49,14 @@ export function tabBar() {
         activeItem = item;
         offsetMenuBorder(activeItem, menuBorder);
         inners[index].classList.add('visible');
-        let a = inners[index].children[0].children;
-        console.log(a)
+        const li = inners[index].querySelectorAll('li');
+
+        if (li) {
+            for (let i = 0; i < li.length; i++){
+                li[i].style.transitionDelay = `${i * 0.1 + 0.65}s`;
+            }
+        }
+
     }
 
     function offsetMenuBorder(element, menuBorder) {
