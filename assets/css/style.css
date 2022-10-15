@@ -3,6 +3,7 @@
 @import url(../../assets/css/main_page.css);
 @import url(../../assets/css/nav.css);
 @import url(../../assets/css/tab_bar.css);
+@import url(../../assets/css/popup.css);
 
 
 
@@ -12,7 +13,7 @@
     --Gray_smoky: #ABABAB;
     --Light_gray: #F1F3F2;
     --Yellow: #FFEE2E;
-    --Rad: #D31414;    
+    --Rad: #D31414;
     --Green:#4B9200;
     --burger-color:#F9804B;
     --links-menu: #FDFDFF;
@@ -21,14 +22,18 @@
     --duration: 0.7s;
 }
 
+.locked {
+    overflow: hidden;
+}
+
 img {
     display: block;
 }
- 
+
 a {
     text-decoration: none;
-    color: inherit;   
-    position: relative; 
+    color: inherit;
+    position: relative;
     transition: all .3s linear;
 }
 
@@ -44,8 +49,8 @@ a::before {
     left: 0;
     bottom: -2px;
     width: 0;
-    display: block; 
-    transition: all .3s linear;   
+    display: block;
+    transition: all .3s linear;
 }
 
 a:hover:before {
@@ -93,4 +98,28 @@ body {
     margin: 20px 0;
     text-indent: 30px;
     text-align: justify;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
 }

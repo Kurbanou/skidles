@@ -10,13 +10,13 @@ export function tabBar() {
     const menuItems = menu.querySelectorAll(".menu__item");
     const menuBorder = menu.querySelector(".menu__border");
     const inners = document.querySelectorAll('.intro__inner_item');
-    let activeItem = menu.querySelector(".active");    
+    let activeItem = menu.querySelector(".active");
     const bgc = ['#F9804B','#D31414','#767474','#FFEE2E','#4B9200'];
-    
+
 
     inners[0].innerHTML = svg;
-    
-    for (let i = 0; i < menuItems.length; i++) {        
+
+    for (let i = 0; i < menuItems.length; i++) {
         menuItems[i].style.setProperty('--bgColorItem', bgc[i]);
     }
 
@@ -33,6 +33,7 @@ export function tabBar() {
         if (activeItem) {
             activeItem.classList.remove("active");
             inners.forEach(el => el.classList.remove('visible'));
+
         }
 
         item.classList.add("active");
@@ -40,6 +41,8 @@ export function tabBar() {
         activeItem = item;
         offsetMenuBorder(activeItem, menuBorder);
         inners[index].classList.add('visible');
+        let a = inners[index].children[0].children;
+        console.log(a)
     }
 
     function offsetMenuBorder(element, menuBorder) {
