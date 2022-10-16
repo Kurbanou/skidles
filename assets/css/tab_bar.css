@@ -10,7 +10,7 @@
 
   .menu__inner {
     display: flex;
-    font-size: .8855em;
+    font-size: 1.2em;
     padding: 0 2.85em;
     position: relative;
     box-sizing: inherit;
@@ -31,6 +31,7 @@
     justify-content: center;
     padding: 0.55em 0 0.85em;
     transition: transform var(--timeOut, var(--duration));
+    transition: opacity .3s linear;
   }
 
   .menu__item::before {
@@ -46,6 +47,28 @@
 
   .menu__item.active {
     transform: translate3d(0, -0.8em, 0);
+  }
+
+  .menu__item .icon{
+    opacity: .3;
+  }
+
+  .menu__item.active .icon{
+    opacity: 1;
+  }
+
+  .menu__item:hover .icon{
+    stroke: var(--activelink);
+    opacity: 1;
+  }
+
+  .menu__item.active:hover .icon{
+    stroke: white;
+    opacity: 1;
+  }
+
+  .menu__item:active .icon{
+    stroke: var(--Green);
   }
 
   .menu__item.active::before {

@@ -39,6 +39,11 @@ a {
     transition: all .3s linear;
 }
 
+a:active,
+a:active *{
+    color: var(--Green) !important;
+}
+
 .active {
     color: var(--activelink);
 }

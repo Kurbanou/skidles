@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     color: var(--Black_blue);
-    padding-top: 60px;
+    padding-top: 50px;
     background: linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)), linear-gradient(315.75deg, rgba(254, 210, 144, 0.85) 30.06%,  rgba(254, 210, 144, 0.85) 106.36%),   url(../../assets/img/jpg/intro_fon.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
@@ -48,7 +48,32 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
 }
+
+.intro ul{
+    border-radius: 20px;
+    transition: all .9s linear;
+    opacity: 0;
+    padding: 30px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    height: fit-content;
+    width: fit-content ;
+}
+
+
+@media (max-width:520px) {
+    .intro ul{
+        background: transparent;
+        padding: 0;
+    }
+}
+
+.visible ul{
+    opacity: 1;
+}
+
+
 
 .intro__inner_item li{
     opacity: 0;
@@ -73,11 +98,9 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    text-align: center;
 }
 
 .kachestvo p{
-    text-align: center;
     margin-top: 10px;
 }
 
@@ -104,8 +127,6 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    align-items: center;
-
 }
 
 .admin-proc__item {
@@ -116,7 +137,7 @@
 
 .video {
     aspect-ratio: 16/9;
-    height: 100%;
+    height: 100% !important;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +186,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: center;
 }
 
 /* /intro */
