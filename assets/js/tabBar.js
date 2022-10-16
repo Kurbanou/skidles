@@ -13,6 +13,13 @@ export function tabBar() {
     let activeItem = menu.querySelector(".active");
     const bgc = ['#F9804B','#D31414','#F9B04B','#3871A1','#4B9200'];
     const intro = document.querySelector('.intro');
+    const bg = [
+        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),linear-gradient( rgba(253, 193, 170, .8) , rgba(254, 205, 153, .8)), url(../../assets/img/jpg/intro/1.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/2.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)), url(../../assets/img/jpg/intro/3.jpg) top left no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/4.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/5.jpg) center center no-repeat',
+    ];
 
 
     inners[0].innerHTML = svg;
@@ -22,6 +29,13 @@ export function tabBar() {
     }
 
     function clickItem(item, index) {
+        const intro = document.querySelector('.intro');
+
+
+
+        intro.style.background = bg[index];
+
+        intro.style.backgroundSize = 'cover';
 
         if (index === 0) {
             inners[0].innerHTML = svg;

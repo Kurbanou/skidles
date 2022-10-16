@@ -50,7 +50,7 @@
   }
 
   .menu__item .icon{
-    opacity: .3;
+    opacity: .1;
   }
 
   .menu__item.active .icon{
