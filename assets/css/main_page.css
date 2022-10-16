@@ -14,10 +14,13 @@
     background: linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)), linear-gradient(315.75deg, rgba(254, 210, 144, 0.85) 30.06%,  rgba(254, 210, 144, 0.85) 106.36%),   url(../../assets/img/jpg/intro_fon.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
+
 }
 
 .inner__menu {
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .intro__inner{
@@ -26,6 +29,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
+    position: relative;
 }
 
 .intro__inner li {
@@ -43,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .intro__inner_item li{
@@ -69,6 +74,11 @@
     align-items: center;
     gap: 10px;
     text-align: center;
+}
+
+.kachestvo p{
+    text-align: center;
+    margin-top: 10px;
 }
 
 .kachestvo_img {
@@ -103,11 +113,6 @@
     align-items: center;
     gap: 10px;
 }
-
-
-
-
-
 
 .video {
     aspect-ratio: 16/9;
@@ -163,19 +168,17 @@
     justify-content: center;
 }
 
-
-
-
 /* /intro */
 
-/* about */
-.about {
+/* product */
+
+.product {
+    height: 100%;
     min-height: 100vh;
-    color: var(--Black_blue);
 }
 
 
-/* /about */
+/* /product  */
 
 
 
