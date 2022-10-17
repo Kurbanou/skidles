@@ -61,7 +61,7 @@ header li {
 
 .menu-toggle {
   display: none;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   background-color: transparent;
   position: relative;
   border: none;
@@ -105,8 +105,12 @@ header li {
   transform: translateY(2px);
 }
 
-.menu-toggle:hover {
+/* .menu-toggle:hover {
   opacity: 1;
+} */
+
+.menu-toggle:hover::before{
+  background: linear-gradient(to bottom, var(--activelink), var(--activelink) 20%, transparent 20%, transparent 40%, var(--activelink) 40%, var(--activelink) 60%, transparent 60%, transparent 80%, var(--activelink) 80%, var(--activelink) 100%);  
 }
 
 

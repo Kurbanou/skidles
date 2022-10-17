@@ -17,7 +17,7 @@
     --Yellow: #FFEE2E;
     --Rad: #D31414;
     --Green:#4B9200;
-    --burger-color:#F9804B;
+    --burger-color:#333B41;
     --links-menu: #FDFDFF;
     --activelink: #F9804B;
     --bgColorMenu: #333B41;
@@ -46,6 +46,35 @@ a {
     position: relative;
     transition: color .3s linear;
 }
+
+.submit {
+    width: 130px;
+    height: 42px;
+    display: flex;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--Black_blue);
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--Light_gray);
+}
+
+.submit:invalid {
+    border: solid 1px var(--Rad);
+    color: var(--Rad);
+}
+
+.submit:active{
+    border: solid 1px var(--Green);
+    color: var(--Green);
+}
+
+
 
 a:active,
 a:active *{
