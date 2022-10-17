@@ -24,6 +24,14 @@
     --duration: 0.7s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--Light_gray);
+}
+
 .locked {
     overflow: hidden;
 }
@@ -36,7 +44,7 @@ a {
     text-decoration: none;
     color: inherit;
     position: relative;
-    transition: all .3s linear;
+    transition: color .3s linear;
 }
 
 a:active,
@@ -44,11 +52,12 @@ a:active *{
     color: var(--Green) !important;
 }
 
-.active {
-    color: var(--activelink);
+.active,
+a p:hover {
+    color: var(--activelink) !important;
 }
 
-a::before {
+a p::before {
     content: '';
     height: 2px;
     background-color: var(--activelink);
@@ -60,7 +69,7 @@ a::before {
     transition: all .3s linear;
 }
 
-a:hover:before {
+a:hover p:before {
     width: 100%;
 }
 
@@ -115,6 +124,13 @@ h2 {
     line-height: 120%;
 }
 
+@media (max-width:400px){
+    h2 {     
+        font-size: 24px;        
+    }
+}
+
+
 h3 {
     font-family: 'Roboto';
     font-style: normal;
@@ -129,4 +145,36 @@ h3 {
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
+}
+
+
+.toTop {
+    -webkit-animation: toTop 0.8s ease-out forwards;
+          animation: toTop 0.8s ease-out forwards;
+  }
+
+@-webkit-keyframes toTop {
+    0% {
+      opacity: 0;
+      transform: translate3d(0,0,0);
+      
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0,36px,0);      
+    }
+}
+  
+@keyframes toTop {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,36px,0);
+        
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translate3d(0,0,0);      
+      }
 }

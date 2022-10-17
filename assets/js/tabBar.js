@@ -15,10 +15,10 @@ export function tabBar() {
     const intro = document.querySelector('.intro');
     const bg = [
         'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),linear-gradient( rgba(253, 193, 170, .8) , rgba(254, 205, 153, .8)), url(../../assets/img/jpg/intro/1.jpg) center center no-repeat',
-        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/2.jpg) center center no-repeat',
-        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)), url(../../assets/img/jpg/intro/3.jpg) top left no-repeat',
-        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/4.jpg) center center no-repeat',
-        'linear-gradient( rgba(253, 253, 255, 0.52) , rgba(253, 253, 255, 0.52)),  url(../../assets/img/jpg/intro/5.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0) , rgba(253, 253, 255, 0)),  url(../../assets/img/jpg/intro/2.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0) , rgba(253, 253, 255, 0)), url(../../assets/img/jpg/intro/3.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0) , rgba(253, 253, 255, 0)),  url(../../assets/img/jpg/intro/4.jpg) center center no-repeat',
+        'linear-gradient( rgba(253, 253, 255, 0) , rgba(253, 253, 255, 0)),  url(../../assets/img/jpg/intro/5.jpg) center center no-repeat',
     ];
 
 

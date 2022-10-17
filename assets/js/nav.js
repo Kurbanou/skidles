@@ -12,21 +12,16 @@ export function nav(){
         for (let i = 0; i < li.length; i++){
             if (document.body.classList.contains('open')) {
                 li[i].style.transitionDelay = `${i * 0.1 + 0.65}s`;
+                links[i].setAttribute('data-text', links[i].innerHTML.slice(3,-4));
+                links.forEach(el => {
+                    el.addEventListener('click', burger)
+                })
             } else {
                 li[i].style.transitionDelay = '0s';
             }
         }
     }
-
-
-    /*для добавления атрибута и стилизации https://codepen.io/hexagoncircle/pen/OMJeja */
-    for (let i = 0; i < links.length; i++) {
-        links[i].addEventListener('click',burger);
-        links[i].setAttribute('data-text', links[i].innerHTML);
-    }
-
-
-
+    
     links.forEach(el =>{
         if (location.href == el.href) {
             el.classList.add('active');
