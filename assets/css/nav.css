@@ -26,7 +26,8 @@ header.blog {
   background-color: transparent;
 }
 
-header a {
+header a,
+footer a {
   font-family: inherit;
   text-decoration: none;
   color: inherit;
@@ -36,7 +37,8 @@ header a {
 }
 
 
-header li {
+header li,
+footer li {
   list-style: none;
 }
 
@@ -44,7 +46,8 @@ header li {
   display: none;
 }
 
-.main__menu {
+.main__menu,
+.footer_nav {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -52,7 +55,7 @@ header li {
 
 .burger {
   padding: 10px;
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, .3);
   position: fixed;
   top: 24px;
   left:24px;
@@ -110,7 +113,7 @@ header li {
 } */
 
 .menu-toggle:hover::before{
-  background: linear-gradient(to bottom, var(--activelink), var(--activelink) 20%, transparent 20%, transparent 40%, var(--activelink) 40%, var(--activelink) 60%, transparent 60%, transparent 80%, var(--activelink) 80%, var(--activelink) 100%);  
+  background: linear-gradient(to bottom, var(--activelink), var(--activelink) 20%, transparent 20%, transparent 40%, var(--activelink) 40%, var(--activelink) 60%, transparent 60%, transparent 80%, var(--activelink) 80%, var(--activelink) 100%);
 }
 
 
@@ -470,4 +473,4 @@ header li {
   }
 }
 
- 
+

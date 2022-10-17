@@ -5,7 +5,9 @@ export function nav(){
     const burgerMenu = document.querySelector('.menu-toggle'),
           menu = document.querySelector('.main__menu'),
           links = menu.querySelectorAll('a'),
-          li = menu.getElementsByTagName('li');
+          li = menu.getElementsByTagName('li'),
+          footerLinks = document.querySelector('.footer_nav').querySelectorAll('a');
+
 
     function burger() {
         document.body.classList.toggle('open');
@@ -21,14 +23,21 @@ export function nav(){
             }
         }
     }
-    
+
     links.forEach(el =>{
         if (location.href == el.href) {
             el.classList.add('active');
         }
     });
 
+    footerLinks.forEach(el =>{
+        if (location.href == el.href) {
+            el.classList.add('active');
+        }
+    });
+
     burgerMenu.addEventListener('click',burger);
+
 }
 
 
