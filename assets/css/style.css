@@ -40,7 +40,34 @@ body {
 }
 
 
+.button {
+    width: 298px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all .1s linear;
+}
 
+.button:hover {
+    background: #E47209;
+}
+
+.button:active {
+    background: var(--Green);
+}
 
 
 .locked {
@@ -72,13 +99,14 @@ a {
     font-weight: 400;
     font-size: 16px;
     border-radius: 5px;
-    background-color: var(--Light_gray);
+    background: var(--Light_gray);
     cursor: pointer;
 }
 
 .submit:hover {
     color: var(--activelink);
     border: solid 2px var(--activelink);
+    background: var(--Light_gray);
 
 }
 
@@ -90,6 +118,7 @@ a {
 .submit:active{
     border: solid 1px var(--Green);
     color: var(--Green);
+    background: var(--Light_gray);
 }
 
 .active,
@@ -158,9 +187,9 @@ body {
 }
 
 .post {
-    margin: 20px 0;
     text-indent: 30px;
-    text-align: justify;
+    text-transform: lowercase;
+    /* text-align: justify; */
 }
 
 h2 {
@@ -169,11 +198,34 @@ h2 {
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
-    /* text-transform: lowercase; */
+    text-transform: lowercase;
 }
 
-h2::first-letter {
-    text-transform: uppercase !important;    
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: lowercase;
+}
+
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: lowercase;
+}
+
+
+
+h2::first-letter,
+h3::first-letter,
+.subtitle::first-letter,
+.post::first-letter {
+    text-transform: uppercase !important;
 }
 
 @media (max-width:400px){
@@ -183,21 +235,6 @@ h2::first-letter {
 }
 
 
-h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 130%;
-}
-
-.subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-}
 
 .little {
     font-family: 'Roboto';
