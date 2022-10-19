@@ -1,0 +1,51 @@
+/* blog */
+
+.blog {
+    padding-top: 50px;
+}
+
+.inner_blog{
+
+}
+
+.last-news__inner{
+
+}
+
+.last-news__img{
+    
+
+}
+.last-news__title {
+    
+    
+    
+  
+}
+
+
+.last-news__title h2{
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+    
+}
+
+.last-news__content {
+    margin-top: 40px;
+}
+
+.last-news__content img {
+    width: 50%;    
+    padding: 10px;
+    background-color: white;
+    float: left;   
+    margin-right: 14px;    
+}
+
+
+
+
+/* /blog */

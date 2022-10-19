@@ -6,6 +6,7 @@
 @import url(../../assets/css/popup.css);
 @import url(../../assets/css/svgAnimate.css);
 @import url(../../assets/css/footer.css);
+@import url(../../assets/css/blog.css);
 
 
 
@@ -168,6 +169,11 @@ h2 {
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
+    /* text-transform: lowercase; */
+}
+
+h2::first-letter {
+    text-transform: uppercase !important;    
 }
 
 @media (max-width:400px){
