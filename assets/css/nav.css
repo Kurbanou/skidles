@@ -147,6 +147,7 @@ footer li {
   border-radius: 100%;
   transform: scale(0.04), translateY(9999px);
   overflow: hidden;
+  opacity: .888;
 }
 
 .main__menu li{
@@ -264,6 +265,7 @@ footer li {
   nav:before {
     content: "";
     position: absolute;
+    opacity: .888;
     top: 0;
     right: 0;
     bottom: 0;
