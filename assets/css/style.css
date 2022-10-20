@@ -17,7 +17,7 @@
     --Gray_smoky: #ABABAB;
     --Light_gray: #F1F3F2;
     --Yellow: #FFEE2E;
-    --Rad: #D31414;
+    --Red: #D31414;
     --Green:#4B9200;
     --burger-color:#333B41;
     --links-menu: #FDFDFF;
@@ -59,6 +59,7 @@ body {
     border: none;
     cursor: pointer;
     transition: all .1s linear;
+    user-select: none;
 }
 
 .button:hover {
@@ -122,7 +123,8 @@ a {
 }
 
 .active,
-a p:hover {
+a p:hover,
+a span:hover {
     color: var(--activelink) ;
 }
 
@@ -133,7 +135,8 @@ a:active *{
 
 
 
-a p::before {
+a p::before,
+a span::before {
     content: '';
     height: 2px;
     background-color: var(--activelink);
@@ -145,7 +148,8 @@ a p::before {
     transition: all .3s linear;
 }
 
-a:hover p:before {
+a:hover p:before,
+a:hover span:before {
     width: 100%;
 }
 
