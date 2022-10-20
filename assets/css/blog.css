@@ -34,22 +34,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    gap: 10%;
     margin-bottom: 40px;
 }
 
 .last-news__img { 
     width: 100%;
-    max-width: 49%;     
+    max-width: 45%;     
     position: relative;       
-    padding: 2px;
+    padding: 4px;
     user-select: none;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);   
 }
 
 .last-news__content {   
     width: 100%;
-    max-width: 49%; 
+    max-width: 45%; 
     display: flex;
     flex-direction: column;
     gap: 20px;
