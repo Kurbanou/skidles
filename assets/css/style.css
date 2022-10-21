@@ -64,13 +64,39 @@ body {
     user-select: none;
 }
 
-.button:hover {
+.button:hover,
+.arrow:hover {
     background: #E47209;
 }
 
-.button:active {
+.button:active,
+.arrow:active {
     background: var(--Green);
 }
+
+.arrow {
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition:  all .3s linear;
+}
+
+.disable,
+.disable:hover,
+.disable:active {
+    background: var(--Gray);
+    cursor: unset;
+}
+
 
 
 .locked {
