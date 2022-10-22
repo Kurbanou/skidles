@@ -22,7 +22,7 @@
 } */
 
 #magic-path {
-    animation: draw-circle .5s linear ;
+    animation: draw-circle 5s linear ;
 }
 /* /animateBg */
 
