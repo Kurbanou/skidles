@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--Black_blue);
 
 }
 
@@ -43,7 +44,7 @@
 
 .contacts__book .subtitle {
     text-align: center;
-    color: var(--activelink);
+    color: black;
 }
 
 .contacts__book p {
