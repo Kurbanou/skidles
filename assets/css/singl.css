@@ -1,6 +1,6 @@
 /* singl */
 .singl {
-    padding: 180px 0;
+    padding: 50px 0;
     transition: 0.2s ease-out;
 }
 
@@ -9,15 +9,17 @@
 }
 
 .singl .content {
-    /* display: flex; */
+    display: flex;    
     flex-direction: column;
-    margin-top: 88px;
+    margin: 88px 0;
+    gap: 20px;
 }
 
-.singl .content img {
-    float: left;
-    margin: 0 16px 0 0;
-    max-width: 48%;
+.singl .content img { 
+     
+    margin: 0 auto;
+    width: 100%;    
+    max-width: 50vh;
     padding: 4px;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
