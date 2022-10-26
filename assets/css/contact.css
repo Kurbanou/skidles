@@ -31,11 +31,23 @@
     background: url(../../assets/img/jpg/intro/bg.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    line-height: 1;
+}
+
+@media (max-width:640px){
+    .contact .wrapper{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:400px){
+    .contact .wrapper {
+        padding:40px 10px;
+    }
 }
 
 
