@@ -1,12 +1,16 @@
 /* singl */
 .singl {
-    padding: 180px 0;
+    padding-top: 180px;
     transition: 0.2s ease-out;
+    margin-bottom: 180px;
+    min-height: 100vh;
 }
 
 .singl h2 {
     text-align: center;
 }
+
+
 
 .singl .content {
     /* display: flex; */
