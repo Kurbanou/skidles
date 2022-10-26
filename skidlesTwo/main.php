@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Скидельский лесхоз</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
-</head>
-<body>
-    <header class="">
-        <div class="header__inner">
-            <nav>
-                <ul class="main__menu">
-                    <li><a href="../../pages/home/index.html"><p>Главная</p></a></li>
-                    <li><a href="../../pages/home/index.html#product"><p>Продукция</p></a></li>
-                    <li><a href="#Информация"><p>Информация</p></a></li>
-                    <li><a href="../../pages/blog/blog.html"><p>Новости</p></a></li>
-                    <li><a href="../../pages/contacts/contacts.html"><p>Контакты</p></a></li>
-                </ul>
-            </nav>
-            <div class="burger"><div class="menu-toggle"><span></span></div></div>
+<?php
 
-        </div>
-    </header>
+	get_header('home');
+    
+/* Template name: main */
+
+?>
+
     <main>
         <section class="intro">
             <div class="dlia razmetki"><span></span></div>
@@ -41,11 +24,11 @@
                             <p><span class="active">Директор:</span>  2 и 4 среда месяца </p>
                         </li>
                         <li class="admin-proc__item">
-                            <p><span class="active">Главный лесничий:</span>  1 и 3 четверг месяца</p>
+                            <p><span class="active">Главный лесничий:</span>  1 и 3 среда месяца</p>
                         </li>
                         <li class="admin-proc__item">
-                            <a href="../../assets/doc/administrativnyye-protsedury.zip" target="_blank"><p class="active">Административные процедуры скачать...</p></a>
-                            <img src="../../assets/img/svg/zip.svg" width="24" alt="zip">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/administrativnyye-protsedury.zip" target="_blank"><p class="active">Административные процедуры скачать...</p></a>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/zip.svg" width="24" alt="zip">
                         </li>
                         <li class="admin-proc__item">
                             <p>Горячая линия:</p>
@@ -67,11 +50,11 @@
                                 <p class="post">Выскажите свое мнение о качестве нашего обслуживания, это поспособствует повышению качества оказания услуг.
                                 </p>
                             </li>
-                            <li><a class="active" href="../../assets/doc/uslugi.pdf" target="_blank"><p>Прайс на услуги скачать...</p></a> <img src="../../assets/img/svg/pdf.svg"  width="24" alt="pdf"></li>
+                            <li><a class="active" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/uslugi.pdf" target="_blank"><p>Прайс на услуги скачать...</p></a> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg"  width="24" alt="pdf"></li>
 
                         </div>
                         <li class="kachestvo_img">
-                            <img src="../../assets/img/jpg/qr.jpg" width="90" alt="qr">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qr.jpg" width="90" alt="qr">
                         </li>
 
                     </ul>
@@ -82,15 +65,15 @@
                     <ul class="baza__otdyha">
                         <li class="baza__otdyha-item">
                             <p class="subtitle">База отдыха "Дальнее"</p>
-                            <a href="https://www.google.com/maps/dir/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE/53.8865443,24.201009/@53.7819152,23.8731173,45564m/data=!3m2!1e3!4b1!4m9!4m8!1m5!1m1!1s0x46dfd64beac55d1d:0xf013fd26569718c0!2m2!1d23.8222673!2d53.6687634!1m0!3e0" target="_blank"><img src="../../assets/img/svg/map.svg" width="24" alt="map"></a>
+                            <a href="https://www.google.com/maps/dir/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE/53.8865443,24.201009/@53.7819152,23.8731173,45564m/data=!3m2!1e3!4b1!4m9!4m8!1m5!1m1!1s0x46dfd64beac55d1d:0xf013fd26569718c0!2m2!1d23.8222673!2d53.6687634!1m0!3e0" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/map.svg" width="24" alt="map"></a>
                         </li>
                         <li class="baza__otdyha-item">
                             <p class="post">"Дальнее" приглашает отдохнуть на берегу оз. Веровское, в 4 км. от а/г Поречье. Для отдыха населения построены летние домики и беседки.
                             </p>
                         </li>
                         <li class="baza__otdyha-item">
-                            <a class="active" href="../../assets/doc/dalnee.pdf"><p>Прайс скачать...</p></a>
-                            <img src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                            <a class="active" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/dalnee.pdf"><p>Прайс скачать...</p></a>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             <p>Тел:</p>
                             <a href="tel:+375152473042" class="active"><p>+375(29)8624188</p></a>
                         </li>
@@ -205,9 +188,9 @@
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/schepa.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/schepa.pdf" target="_blank">
                                 Щепа
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
@@ -215,45 +198,45 @@
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/drova.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/drova.pdf" target="_blank">
                                 Дрова
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/lesomaterial.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/lesomaterial.pdf" target="_blank">
                                 Лесоматериалы круглые
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/med.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/med.pdf" target="_blank">
                                 Мед натуральный
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/derevo-novogodnee.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/derevo-novogodnee.pdf" target="_blank">
                                 Дерево Новогоднее
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
                     <div class="inner__item">
                         <div class="product__img"></div>
                         <div class="product__name">
-                            <a href="../../assets/doc/sok.pdf" target="_blank">
+                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/sok.pdf" target="_blank">
                                 Сок березовый
-                                <img class="price" src="../../assets/img/svg/pdf.svg" width="24" alt="pdf">
+                                <img class="price" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/pdf.svg" width="24" alt="pdf">
                             </a>
                         </div>
                     </div>
@@ -264,68 +247,13 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="wrapper">
-            <div class="footer__inner">
+    
+    
+  
 
-                <div class="item1">
-                    <div class="logo"><h1>Ски<span>д</span>ельский лесхоз</h1></div>
-                </div>
-
-                <div class="item2">
-                    <div class="contatcUs">
-                        <p class="subtitle">Электронное обращение</p>
-                        <button class="fiz submit">Физлицо</button>
-                        <button class="ur submit">Юр.лицо</button>
-                    </div>
-                </div>
-
-                <div class="item3">
-                    <div class="social">
-                        <div class="icons">
-                            <a href="https://www.instagram.com/skidles_1/" target="_blank">
-                                <img src="../../assets/img/svg/instagram.svg" width="16px" alt="icon">
-                            </a>
-                            <a href="https://www.instagram.com/skidles_1/" target="_blank">
-                                <p>Instagram</p>
-                            </a>
-                        </div>
-                        <div class="icons">
-                            <a href="https://t.me/skidles_by" target="_blank">
-                                <img src="../../assets/img/svg/telegram.svg"  width="16px" alt="icon">
-                            </a>
-                            <a href="https://t.me/skidles_by" target="_blank">
-                                <p>Telegram</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item4">
-                    <ul class="footer_nav">
-                        <li>
-                            <a href="../../pages/home/index.html"><p>Главная</p></a>
-                        </li>
-                        <li>
-                            <a href="#Информация"><p>Информация</p></a>
-                        </li>
-                        <li>
-                            <a href="../../pages/contacts/contacts.html"><p>Контакты</p></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="item5">
-                    <div class="designed">
-                        <p class="little">
-                            Designed by Faridun Kurbanou kurbanou.faridun@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <script src="../../assets/js/mainPage.js" type="module"></script>
-</body>
-</html>
+    <?php 
+        get_footer( ); 
+        
+   
+        
+    ?>
