@@ -8,6 +8,7 @@
     z-index: 1000;
     transition: all .3s linear;
     opacity: 0;
+
 }
 
 .open{
@@ -21,7 +22,7 @@
     padding: 20px 36px 17px 17px;
     height: 100%;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .popup_inner .testimonials__inner_item {
@@ -37,7 +38,6 @@
     position: absolute;
     top: -7px;
     right: -24px;
-
     cursor: pointer;
     transition: all .3s linear;
 }
@@ -86,3 +86,56 @@
 
 
 /* /popup */
+
+.v_razrabotke {
+    background-color: #3e0866;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 0);
+    overflow: auto;
+    position: absolute;
+}
+
+.v_razrabotke .popup_inner {
+    padding: 10px;
+}
+
+.v_razrabotke .x_icon {
+    display: none;
+}
+
+.popupInfo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center
+}
+
+.v_razrabotke .img img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.v_razrabotke .descr {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.v_razrabotke .social {
+    flex-direction: row;
+}
+
+@media (max-height: 570px) {
+    .img {display: none;}
+
+}

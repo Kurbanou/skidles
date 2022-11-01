@@ -11,7 +11,9 @@ tabBar();
 function siteInfo(){
     popupCreate();
     const popupInner = document.querySelector('.popup_inner');
-    popupInner.innerHTML = `<div class="popupInfo">
+    const popupInfo =document.createElement('div');
+    popupInfo.classList = 'popupInfo';
+    popupInfo.innerHTML = `<div class="popupInfo">
                                 <div class="descr">
                                     <p class="subtitle">В разработке!</p>
                                     <p>Наш сайт в разработке, но мы готовы к работе! Мы готовим для вас что-то удивительное и захватывающее.</p>
@@ -22,7 +24,7 @@ function siteInfo(){
                                                 <img src="../../assets/img/svg/instagram.svg" width="16px" alt="icon">
                                             </a>
                                             <a href="https://www.instagram.com/skidles_1/" target="_blank">
-                                                
+
                                             </a>
                                         </div>
                                         <div class="icons">
@@ -30,7 +32,7 @@ function siteInfo(){
                                                 <img src="../../assets/img/svg/telegram.svg"  width="16px" alt="icon">
                                             </a>
                                             <a href="https://t.me/skidles_by" target="_blank">
-                                                
+
                                             </a>
                                         </div>
                                     </div>
@@ -39,13 +41,11 @@ function siteInfo(){
                                     <img src="../../assets/img/jpg/v_razrabotke.jpg" alt="img">
                                 </div>
                             </div>`;
+    popupInner.appendChild(popupInfo);
     const cls = document.querySelector('.cls');
-    cls.addEventListener('click', clsPopup);  
+    cls.addEventListener('click', clsPopup);
+    const popup = document.querySelector('.popups');
+    popup.classList.add('v_razrabotke')
 }
 
 siteInfo();
-
-
-
-
-
