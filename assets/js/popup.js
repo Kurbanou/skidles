@@ -18,8 +18,8 @@ function popupCreate() {
     const xIcon = document.querySelector('.x_icon');
     xIcon.addEventListener('click', clsPopup);
     fon.addEventListener('click', clsPopup);
-    setTimeout(() => {popup.classList.add('open');},300 )
-    setTimeout(() => {xIcon.classList.add('rotate');},600 )
+    setTimeout(() => {popup.classList.add('open');},300 );
+    setTimeout(() => {xIcon.classList.add('rotate');},600 );    
 
 }
 
