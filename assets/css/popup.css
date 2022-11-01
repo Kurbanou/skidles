@@ -22,7 +22,7 @@
     padding: 20px 36px 17px 17px;
     height: 100%;
     width: 100%;
-    /* background-color: white; */
+    background-color: white;
 }
 
 .popup_inner .testimonials__inner_item {
@@ -99,7 +99,8 @@
 }
 
 .v_razrabotke .popup_inner {
-    padding: 10px;
+    padding: 50px 10px;
+    background: transparent;
 }
 
 .v_razrabotke .x_icon {
@@ -109,7 +110,6 @@
 .popupInfo {
     display: flex;
     justify-content: center;
-    gap: 30px;
     align-items: center;
     background-color: transparent;
     color: white;
