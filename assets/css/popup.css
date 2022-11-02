@@ -95,7 +95,7 @@
     right: 0;
     transform: translate(0, 0);
     overflow: auto;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .v_razrabotke .popup_inner {
