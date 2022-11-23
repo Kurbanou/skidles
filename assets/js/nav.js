@@ -38,6 +38,26 @@ export function nav(){
 
     burgerMenu.addEventListener('click',burger);
 
+    // contactUs
+
+    const footerButton = document.querySelector('.contactButton');
+    const popup = document.querySelector('.contactUs');
+    const popupInner = document.querySelector('.contactUs__inner');
+
+    function popupOpen() {
+        document.body.classList.toggle('open');
+        popup.classList.add('open');
+    }
+
+    function popupCls() {
+        document.body.classList.toggle('open');
+        popup.classList.remove('open');
+    }
+
+    footerButton.addEventListener('click',popupOpen);
+    popupInner.parentNode.addEventListener('click',popupCls);
+    console.log(popupInner.parentNode)
+
 }
 
 
