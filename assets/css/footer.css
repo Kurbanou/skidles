@@ -202,9 +202,8 @@ footer {
 }
 
 /* contactUs */
-.contactUs {
-    position: fixed;
-    background-color: rgba(000, 000, 000, .8);
+.contactUs {    
+    position: fixed;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -216,17 +215,34 @@ footer {
     left: -1000%;
 }
 
+.contactUs .fill {
+    background-color: rgba(000, 000, 000, .8);
+    width: 100%;
+    height: 100%;
+    min-height: 550px; 
+    position: absolute;
+    z-index: -1;
+}
+
 .contactUs__inner {
     background: url(../../assets/img/jpg/intro/bg.jpg) center center;
     border: 2px solid var(--activelink);
     border-radius: 20px;
     max-width: 320px;
-    padding: 20px 10px;
+    padding: 20px 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: var(--Black_blue);
     height: fit-content;
+    position: relative;
+}
+
+
+.contactUs .x_icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 @media (max-height:550px) {

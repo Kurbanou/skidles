@@ -41,22 +41,27 @@ export function nav(){
     // contactUs
 
     const footerButton = document.querySelector('.contactButton');
-    const popup = document.querySelector('.contactUs');
-    const popupInner = document.querySelector('.contactUs__inner');
+    const popupContactUs = document.querySelector('.contactUs');
+    const shadow = document.querySelector('.fill');
+   
 
     function popupOpen() {
-        document.body.classList.toggle('open');
-        popup.classList.add('open');
+        const body = document.querySelector('body');  
+        body.style.overflow = 'hidden';      
+        popupContactUs.classList.add('open');
+
+        
     }
 
-    function popupCls() {
-        document.body.classList.toggle('open');
-        popup.classList.remove('open');
+    function popupClose() {        
+        popupContactUs.classList.remove('open');
+        const body = document.querySelector('body'); 
+        body.style.overflow = 'auto'; 
     }
 
     footerButton.addEventListener('click',popupOpen);
-    popupInner.parentNode.addEventListener('click',popupCls);
-    console.log(popupInner.parentNode)
+    shadow.addEventListener('click', popupClose);
+   
 
 }
 
