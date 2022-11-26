@@ -43,25 +43,27 @@ export function nav(){
     const footerButton = document.querySelector('.contactButton');
     const popupContactUs = document.querySelector('.contactUs');
     const shadow = document.querySelector('.fill');
-   
+    const Xicon = document.querySelector('.x_icon2');
+
 
     function popupOpen() {
-        const body = document.querySelector('body');  
-        body.style.overflow = 'hidden';      
+        const body = document.querySelector('body');
+        body.style.overflow = 'hidden';
         popupContactUs.classList.add('open');
 
-        
+
     }
 
-    function popupClose() {        
+    function popupClose() {
         popupContactUs.classList.remove('open');
-        const body = document.querySelector('body'); 
-        body.style.overflow = 'auto'; 
+        const body = document.querySelector('body');
+        body.style.overflow = 'auto';
     }
 
     footerButton.addEventListener('click',popupOpen);
     shadow.addEventListener('click', popupClose);
-   
+    Xicon.addEventListener('click', popupClose);
+
 
 }
 
