@@ -91,7 +91,13 @@
     gap: 10px;
 }
 
-.kachestvo p{
+.kach {
+    display: flex;
+    gap: 10px;
+
+}
+
+.kachestvo li{
     margin-top: 10px;
     width: fit-content;
 }
