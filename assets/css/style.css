@@ -161,7 +161,7 @@ a {
 
 .active,
 a *:hover {
-    color: var(--activelink) ;
+    color: var(--activelink) ;    
 }
 
 a *:active{
