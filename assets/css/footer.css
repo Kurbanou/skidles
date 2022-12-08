@@ -271,7 +271,7 @@ footer {
     text-align: center;
 }
 
-.open {
+.openContact {
     left: 0;
     right: 0;
     transform: translateX(0);

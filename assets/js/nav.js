@@ -49,13 +49,13 @@ export function nav(){
     function popupOpen() {
         const body = document.querySelector('body');
         body.style.overflow = 'hidden';
-        popupContactUs.classList.add('open');
+        popupContactUs.classList.add('openContact');
 
 
     }
 
     function popupClose() {
-        popupContactUs.classList.remove('open');
+        popupContactUs.classList.remove('openContact');
         const body = document.querySelector('body');
         body.style.overflow = 'auto';
     }
