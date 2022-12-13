@@ -24,7 +24,7 @@
                             <p><span class="active">Директор:</span>  2 и 4 среда месяца </p>
                         </li>
                         <li class="admin-proc__item">
-                            <p><span class="active">Главный лесничий:</span>  1 и 3 среда месяца</p>
+                            <p><span class="active">Главный лесничий:</span>  1 и 3 четверг месяца</p>
                         </li>
                         <li class="admin-proc__item">
                             <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/administrativnyye-protsedury.zip" target="_blank"><p class="active">Административные процедуры скачать...</p></a>
@@ -41,9 +41,13 @@
 
                     <ul class="kachestvo">
                         <div>
-                            <li class="kachestvo_link">
-                                <a class="active" href="http://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/21012/org-page" target="_blank">
-                                    <p>КАЧЕСТВО-УСЛУГ.БЕЛ</p>
+                             <li class="kachestvo_link">
+                                <a class="active kach" href="http://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/21012/org-page" target="_blank">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/kachestvo.svg" width="48" alt="svg">
+                                    <div>
+                                        <p>КАЧЕСТВО</p>
+                                        <p>УСЛУГ.БЕЛ</p>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -182,6 +186,7 @@
                         <span>+375(152)47-30-55</span>
                     </a>
                 </p>
+                <p><a href="https://www.butb.by/upload/cotirovki/les/les_vr_kvart.xlsx?1669887005" target="_blank" class="active"><span>Прайс</span></a> на деловую древесину, реализуемую населению на общих основаниях.</p>
 
                 <div class="inner">
 
@@ -244,6 +249,26 @@
 
                 </div>
 
+            </div>
+        </section>
+        <section class="qrcode">
+            <h2 class="subtitle">Министерство лесного хозяйства в социальных сетях</h2>
+
+            <div class="wrapper">
+                <div class="qrcode__inner">
+                    <a href="https://www.facebook.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/facebook.jpg" width="70" alt="qr"></a>
+
+                    <a href="https://www.instagram.com/mlh.by" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/insta.jpg" width="70" alt="qr"></a>
+
+                    <a href="https://www.youtube.com/channel/UCEPbuES4gWuvW2dW8EIX7hQ/featured?view_as=subscriber" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/youtube.jpg" width="70" alt="qr"></a>
+
+                    <a href="https://twitter.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/twit.jpg" width="70" alt="qr"></a>
+
+                    <a href="https://t.me/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/telega.jpg" width="70" alt="qr"></a>
+
+                    <a href="http://www.mlh.by/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/qrcodes/mlh.jpg" width="70" alt="qr"></a>
+
+                </div>
             </div>
         </section>
     </main>

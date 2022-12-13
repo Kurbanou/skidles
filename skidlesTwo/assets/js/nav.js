@@ -37,6 +37,32 @@ export function nav(){
     });
 
     burgerMenu.addEventListener('click',burger);
+    
+        // contactUs
+
+    const footerButton = document.querySelector('.contactButton');
+    const popupContactUs = document.querySelector('.contactUs');
+    const shadow = document.querySelector('.fill');
+    const Xicon = document.querySelector('.x_icon2');
+
+
+    function popupOpen() {
+        const body = document.querySelector('body');
+        body.style.overflow = 'hidden';
+        popupContactUs.classList.add('openContact');
+
+
+    }
+
+    function popupClose() {
+        popupContactUs.classList.remove('openContact');
+        const body = document.querySelector('body');
+        body.style.overflow = 'auto';
+    }
+
+    footerButton.addEventListener('click',popupOpen);
+    shadow.addEventListener('click', popupClose);
+    Xicon.addEventListener('click', popupClose);
 
 }
 

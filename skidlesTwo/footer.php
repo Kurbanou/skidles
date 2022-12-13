@@ -8,9 +8,7 @@
 
                 <div class="item2">
                     <div class="contatcUs">
-                        <p class="subtitle">Электронное обращение</p>
-                        <button class="fiz submit">Физлицо</button>
-                        <button class="ur submit">Юр.лицо</button>
+                          <button class="button contactButton">Электронное обращение</button>
                     </div>
                 </div>
 
@@ -55,6 +53,20 @@
                             Designed by Faridun Kurbanou kurbanou.faridun@gmail.com
                         </p>
                     </div>
+                </div>
+                
+                <!--попап-->
+                 <div class="contactUs">
+                    <div class="contactUs__inner">
+                        <div class="x_icon2">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/x_icon.svg" alt="x_icon">
+                        </div>
+                        <p class="subtitle">Изменение порядка подачи электронных обращений</p>
+                        <p class="post">Со 2 января 2023 года вступают в силу изменения и дополнения, внесенные в Закон Республики Беларусь от 18.07.2011 № 300-З «Об обращениях граждан и юридических лиц».</p>
+                        <p class="post">В связи с этим изменится порядок подачи электронных обращений: электронные обращения будут подаваться посредством государственной единой (интегрированной) республиканской информационной системы учета и обработки обращений граждан и юридических лиц.</p>
+                        <button class="button" onclick="document.location='https://xn--80abnmycp7evc.xn--90ais/'">обращения.бел</button>
+                    </div>
+                    <div class="fill"></div>
                 </div>
             </div>
         </div>

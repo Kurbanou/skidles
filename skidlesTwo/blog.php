@@ -63,10 +63,10 @@
 
                         <div class="controls">
                             <button class="arrow up disable">
-                                &#129029;
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/up.svg" width="16" alt="svg">
                             </button>
                             <button class="arrow down">
-                                &#129031;
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/down.svg" width="16" alt="svg">
                             </button>
                         </div>
                     </div>

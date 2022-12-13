@@ -8,7 +8,7 @@ function popupCreate() {
     const popup = document.createElement('div');
     popup.className = 'popups';
     popup.innerHTML = `<div class="popup_inner">
-        <div class="x_icon"><img src="../../assets/img/svg/x_icon.svg" alt="x_icon"></div></div>`;
+        <div class="x_icon"><img src="http://skidles.by/wp-content/themes/skidlesTwo/assets/img/svg/x_icon.svg" alt="x_icon"></div></div>`;
     const body = document.querySelector('body');
     body.appendChild(popup);
     body.classList.add('locked');
