@@ -20,16 +20,24 @@
     border-radius: 20px;
     padding: 20px;
     gap: 30px;
+    justify-content: center;
 }
 
 .contact_item {
     display: flex;
     gap: 5px;
     align-items: center;
+
 }
 
 .contact_item_icon {
     width:42px;
+}
+
+@media (max-width:750px) {
+    .contact_item {
+        width: 265px;
+    }
 }
 
 
