@@ -16,46 +16,42 @@
 
 get_header();
 ?>
-
-
-
-    <main>
+<!--  -->
+	<main class="orange">
         <section class="blog_post">
-
-                <div class="inner_blog_post">
-                    <div class="wrapper">
+            <div class="container__arhiv">
+                <div class="wrapper">
+                    <div class="inner_blog_post">
                         <div class="last-news__inner">
 
-                            <?php  $post = get_post('');?>
-
-                            <div class="last-news__img">
-                                <img src="<?php echo get_the_post_thumbnail_url();?>" alt="news">
-                                <div class="last-news__date"><?php the_time('j'); ?></div>
-                            </div>
-
-
-                            <div class="last-news__content">
-
-                                <div class="title_post">
-                                    <h2 ><?php the_title(); ?></h2>
+							 <?php  $post = get_post('');?>
+                                <div class="last-news__img">
+                                    <img src="<?php echo get_the_post_thumbnail_url();?>" alt="news">
+                                    <div class="last-news__date">
+                                        <h1><?php the_time('j'); ?></h1>
+                                        <h2><?php the_time('F'); ?></h2>
+                                    </div>
                                 </div>
-
-                                <div class="text_post">
-                                    <p class="post"><?php echo get_the_excerpt() ?></p>
+                                <div class="last-news__content">
+                                    <div class="title_post">
+                                        <?php the_title(); ?>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="text_post">
+                                        <p><?php echo get_the_excerpt() ?></p>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="last-news__button">
+                                        <button class="button" onclick="window.location.href ='<?php echo get_permalink(); ?>';">Подробнее</button>
+                                    </div>
                                 </div>
-
-                                <div class="last-news__button">
-                                    <button class="button" onclick="window.location.href ='<?php echo get_permalink(); ?>';">Подробнее</button>
-                                </div>
-
-                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="container__arhiv">
+
+<!--  -->
+
                     <div class="inner_arhiv_post">
-                        <p class="subtitle">Новости:</p>
+
                         <div class="over_news">
                             <div class="news_inner">
 
