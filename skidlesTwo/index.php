@@ -10,8 +10,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package skidles
- *  * 
- 
+ *  *
+
  */
 
 get_header();
@@ -25,11 +25,11 @@ get_header();
                 <div class="inner_blog_post">
                     <div class="wrapper">
                         <div class="last-news__inner">
-                            
+
                             <?php  $post = get_post('');?>
 
                             <div class="last-news__img">
-                                <img src=<?php echo get_the_post_thumbnail_url();?>" alt="news">
+                                <img src="<?php echo get_the_post_thumbnail_url();?>" alt="news">
                                 <div class="last-news__date"><?php the_time('j'); ?></div>
                             </div>
 
@@ -58,10 +58,10 @@ get_header();
                         <p class="subtitle">Новости:</p>
                         <div class="over_news">
                             <div class="news_inner">
-                                
-                              
-                                
-                                
+
+
+
+
                                     <?php
                                     //  <!--выводим записи-->
                                     $posts = get_posts( array(
@@ -85,7 +85,7 @@ get_header();
                                         <a  href="<?php echo get_permalink(); ?>"><p><?php the_title(); ?></p></a>
                                     </div>
                                     <?php } wp_reset_postdata(); ?>
-                                
+
                             </div>
                         </div>
                         <div class="controls">
@@ -101,7 +101,7 @@ get_header();
         </section>
     </main>
     <script src="../wp-content/themes/skidlesTwo/assets/js/blog/script.js" type="module"></script>
-	
+
 <?php
 
 get_footer();

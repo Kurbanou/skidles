@@ -83,11 +83,11 @@ main {
     background: var(--Green);
 }
 
-.arrow {
-    width: 62px;
-    height: 62px;
+.arrow {/* 07052023 */
+    width: 58px;
+    height: 58px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 100%;
+    border-radius: 4px;
     border: none;
     font-weight: bold;
     font-size: 24px;
@@ -101,8 +101,10 @@ main {
 
 .disable,
 .disable:hover,
-.disable:active {
-    background: var(--Gray);
+.disable:active {/* 07052023 */
+    /* background: var(--Gray); */
+    background: transparent;
+    box-shadow: inset 1px 1px 6px rgba(0,0,0,0.1);
     cursor: unset;
 }
 
@@ -161,7 +163,7 @@ a {
 
 .active,
 a *:hover {
-    color: var(--activelink) ;    
+    color: var(--activelink) ;
 }
 
 a *:active{
@@ -226,6 +228,7 @@ body {
 .post {
     text-indent: 30px;
 }
+
 
 h2 {
     font-family: 'Roboto';
