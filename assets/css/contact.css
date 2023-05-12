@@ -1,53 +1,46 @@
 /* contact */
 
-.contact {
-    padding-top: 50px;
+.contact {    
+    user-select: none;
+	min-height:100vh;
+	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    gap: 8px;
 }
 
-.contact__intro {
-    padding: 58px 0;
+.contact__intro {     
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--Black_blue);
+    justify-content: center;    
 }
 
 .contact__intro_inner {
-    background: url(../../assets/img/jpg/intro/bg.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20px;
-    padding: 20px;
-    gap: 30px;
-    justify-content: center;
+    border-radius: 20px 0 20px 0;
+    gap: 18px;
+    justify-content: center;    
 }
 
 .contact_item {
     display: flex;
     gap: 5px;
     align-items: center;
+}
 
+.contact_item_text {
+    color: black;
+    font-size: 13px;
 }
 
 .contact_item_icon {
-    width:42px;
+    width:13px;
 }
 
-@media (max-width:750px) {
-    .contact_item {
-        width: 265px;
-    }
-}
-
-
-
-
-.contacts__book_inner {
-    width: 100%;
-    padding: 100px 0;
-    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-}
 
 .contacts__book {
     display: flex;
@@ -78,11 +71,6 @@
         padding:40px 10px;
     }
 }
-
-
-
-
-
 .contacts__book .subtitle {
     text-align: center;
     color: black;
@@ -90,26 +78,6 @@
 
 .contacts__book p {
     overflow: hidden;
-}
-
-.contacts__book p span:first-of-type {
-    float: left;
-    margin-right: 10px;
-}
-
-.contacts__book p span:last-of-type {
-    float: right;
-    margin-left: 10px;
-}
-
-.contacts__book_item p:after {
-    content: '..................................................................................................................................................................................................................................................................................................................................................................................................................';
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-    color: #999;
-    font-size: 10px;
 }
 
 .contacts__book_item a:hover {
@@ -128,5 +96,16 @@
     }
 
 }
-
-
+.contacts__book_table {    
+    border-collapse: collapse;        
+}
+.contacts__book_table td{
+   padding: 8px 5px 8px 5px;   
+   width: 100%;  
+}
+.contacts__book_table tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.18);
+}
+i {
+    color: black;
+}

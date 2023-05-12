@@ -17,6 +17,7 @@
 
 
 
+
 :root {
     --Black_blue: #333B41;
     --Gray: #767474;
@@ -47,7 +48,7 @@ body {
 
 
 .button {
-    width: 298px;
+    width: fit-content;
     height: 54px;
     display: flex;
     align-items: center;
@@ -66,6 +67,7 @@ body {
     cursor: pointer;
     transition: all .1s linear;
     user-select: none;
+    padding:0 20px;
 }
 
 .button:hover,
@@ -79,13 +81,14 @@ body {
 }
 
 .arrow {/* 07052023 */
-    width: 58px;
-    height: 58px;
+    width: fit-content;
+    height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 4px;
     border: none;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    padding:0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,9 +118,9 @@ img {
 
 ul li {
   list-style-position: inside;
-
-
-
+  
+  
+  
 }
 
 
@@ -211,9 +214,9 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: var(--Black_blue);
-
-
-
+	
+	
+	
 	display:flex;
 	flex-direction:column;
 	align-items:space-between;
@@ -286,7 +289,7 @@ h4 {
     h2 {
         font-size: 24px;
     }
-
+    
     h4 {
         font-size: 18px;
     }
@@ -334,3 +337,5 @@ h4 {
           transform: translate3d(0,0,0);
       }
 }
+
+
