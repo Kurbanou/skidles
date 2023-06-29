@@ -7,9 +7,7 @@
                 </div>
 
                 <div class="item2">
-                    <div class="contatcUs">
-                          <button class="button contactButton">Электронное обращение</button>
-                    </div>
+                    <button class="button contactButton">Электронное обращение</button>
                 </div>
 
                 <div class="item3">
@@ -54,7 +52,7 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <!--попап-->
                  <div class="contactUs">
                     <div class="contactUs__inner">
@@ -72,7 +70,3 @@
         </div>
 
     </footer>
-    <?php wp_footer(); ?>
-    
-</body>
-</html>

@@ -1,7 +1,7 @@
 <?php
 
 	get_header('home');
-    
+
 /* Template name: main */
 
 ?>
@@ -91,7 +91,7 @@
                             <a  class="vidos" href="https://youtu.be/ri4tFWW3X5Q" target="_blank" title="Хранители леса"></a>
                         </li>
                         <li class="video__item">
-                            <a  class="vidos" href="https://youtu.be/G71Kqn8iGt4" target="_blank" title="Скидельский лесхоз"></a>
+                            <a  class="vidos" href="https://youtu.be/omCBqn1icCw" target="_blank" title="Скидельский лесхоз"></a>
                         </li>
                         <li class="video__item">
                             <a  class="vidos" href="https://youtu.be/GCGsSQjzMu8" target="_blank" title="Бережём лес для людей"></a>
@@ -272,13 +272,13 @@
             </div>
         </section>
     </main>
-    
-    
-  
 
-    <?php 
-        get_footer( ); 
-        
-   
-        
+
+
+
+    <?php
+        get_footer( );
+
+
+
     ?>

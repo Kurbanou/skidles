@@ -48,4 +48,4 @@ function siteInfo(){
     popup.classList.add('v_razrabotke')
 }
 
-siteInfo();
+// siteInfo();

@@ -1,4 +1,4 @@
-    /*
+/*
 Theme Name: Скидельский лесхоз
 Author: Kurbanou Faridun
 Version: 2.0
@@ -51,7 +51,7 @@ body {
 
 
 .button {
-    width: 298px;
+    width: fit-content;
     height: 54px;
     display: flex;
     align-items: center;
@@ -70,6 +70,7 @@ body {
     cursor: pointer;
     transition: all .1s linear;
     user-select: none;
+    padding:0 20px;
 }
 
 .button:hover,
@@ -82,14 +83,15 @@ body {
     background: var(--Green);
 }
 
-.arrow {
-    width: 62px;
-    height: 62px;
+.arrow {/* 07052023 */
+    width: fit-content;
+    height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 100%;
+    border-radius: 4px;
     border: none;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    padding:0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,8 +102,10 @@ body {
 
 .disable,
 .disable:hover,
-.disable:active {
-    background: var(--Gray);
+.disable:active {/* 07052023 */
+    /* background: var(--Gray); */
+    background: transparent;
+    box-shadow: inset 1px 1px 6px rgba(0,0,0,0.1);
     cursor: unset;
 }
 
@@ -114,6 +118,18 @@ body {
 img {
     display: block;
 }
+
+ul li {
+  list-style-position: inside;
+
+
+
+}
+
+
+
+
+
 
 a {
     text-decoration: none;
@@ -201,6 +217,14 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: var(--Black_blue);
+
+
+
+	display:flex;
+	flex-direction:column;
+	align-items:space-between;
+	height: 100%;
+	min-height:100vh;
 }
 
 .wrapper {
@@ -235,15 +259,17 @@ h2 {
 
 }
 
-h3 {
+h3,h4 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
-
 }
 
+h4 {
+    font-size: 24px;
+}
 .subtitle {
     font-family: 'Roboto';
     font-style: normal;
@@ -265,6 +291,10 @@ h3 {
 @media (max-width:780px){
     h2 {
         font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
     }
 }
 
@@ -310,5 +340,3 @@ h3 {
           transform: translate3d(0,0,0);
       }
 }
-
-

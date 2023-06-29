@@ -1,18 +1,21 @@
 <?php
 
 	get_header('');
-    
+
 /* Template name: contacts */
 
 ?>
 
     <main>
         <section class="contact">
-            
+            <div class="wrapper">
              <div class="contact__intro">
-
                 <div class="contact__intro_inner">
+					 <div class="contact_item contact_item_text">
+                        <p>231761, Гродненский район, г.Скидель,
+                            ул.Зеленковского, 4</p>
 
+                    </div>
                     <div class="contact_item">
                         <div class="contact_item_icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/@.svg" alt="icon"></div>
                         <div class="contact_item_text">
@@ -40,9 +43,7 @@
 
                 </div>
             </div>
-            
-                 <div class="contacts__book_inner">
-                <div class="wrapper">
+                <div class="contacts__book_inner">
                     <div class="contacts__book">
                         <p class="subtitle">Лесхоз:</p>
                         <table class="contacts__book_table">
@@ -86,7 +87,7 @@
 
                         <p class="subtitle">Лесничества:</p>
 
-                        <table class="contacts__book_table">                            
+                        <table class="contacts__book_table">
                             <tr>
                                 <td>Берштовское лесничество</td>
                                 <td><a href="tel:+375151474127">+375151474127</a></td>
@@ -101,7 +102,7 @@
                             </tr>
                             <tr>
                                 <td>Новорудское лесничество</td>
-                                <td><a href="tel:+375152993785">+375152993785</a></td>
+                                <td><a href="tel:+375152965785">+375152965785</a></td>
                             </tr>
                             <tr>
                                 <td>Поречское лесничество</td>
@@ -115,37 +116,20 @@
                                 <td>Лесопункт озеры</td>
                                 <td><a href="tel:+375152479708">+375152479708</a></td>
                             </tr>
-                        </table>   
-                     
+                        </table>
                     </div>
-
                 </div>
-
-
-
-
-
             </div>
-           
-
-
-                    
-
-            </div>
-
-
-
-
-
         </section>
 
     </main>
 
-   
+
+
+
 
 <?php get_footer( ); ?>
 
 
 <!-- <?php echo esc_url( get_template_directory_uri() ); ?> -->
-   
-   
+

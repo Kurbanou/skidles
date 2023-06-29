@@ -1,3 +1,9 @@
+/*
+Theme Name: Скидельский лесхоз
+Author: Kurbanou Faridun
+Version: 2.0
+*/
+
 /* main-css */
 @import url(../../assets/fonts/roboto.css);
 @import url(../../assets/css/main_page.css);
@@ -12,7 +18,6 @@
 @import url(../../assets/css/info.css);
 @import url(../../assets/css/sertification.css);
 @import url(../../assets/css/404.css);
-
 
 
 
@@ -118,9 +123,9 @@ img {
 
 ul li {
   list-style-position: inside;
-  
-  
-  
+
+
+
 }
 
 
@@ -214,9 +219,9 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: var(--Black_blue);
-	
-	
-	
+
+
+
 	display:flex;
 	flex-direction:column;
 	align-items:space-between;
@@ -289,7 +294,7 @@ h4 {
     h2 {
         font-size: 24px;
     }
-    
+
     h4 {
         font-size: 18px;
     }
