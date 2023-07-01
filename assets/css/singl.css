@@ -4,6 +4,18 @@
     transition: 0.2s ease-out;
 
 }
+
+.post {
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+.post li{
+    text-indent: 0px;
+    margin-left: 30px;
+
+}
+
 .singl h2 {
     text-align: center;
 
@@ -17,11 +29,11 @@
     display: flex;
     flex-direction: column;
     margin: 88px 0;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .singl .content img {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
     max-width: 50vh;
     padding: 4px;
@@ -35,7 +47,7 @@
 .singl table {
     margin: 20px 0;
     width: 100%;
-    border: none;
+    border: none !important;
 }
 
 .singl  td {
@@ -44,8 +56,11 @@
     width:  fit-content;
     /*background-color: white;*/
     padding:10px;
+    margin: 20px auto;
+    border: 2px solid var(--Light_gray);
 
 }
+
 
 .singl  tr:nth-child(even) {
     background-color: rgba(249, 128, 75, .2);
@@ -59,6 +74,65 @@
     color: var(--activelink);
     border: 1px solid var(--Black_blue);
 }
+
+.back {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    margin-top: 50px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 13px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.backSvg {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    width: 32px;
+    height: 32px;
+    background-color: var(--Light_gray);
+    border-radius: 100%;
+    transition: all linear .3s;
+}
+
+.backSvg .krug{
+    position: absolute;
+    background-color: var(--Green);
+    border-radius: 100%;
+    top: 4px;
+    left: 4px;
+    transition: all linear .3s;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.treug {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    border: 8px solid transparent; border-bottom: 8px solid white;
+}
+
+.back:hover .krug{
+    transform: rotate(-90deg);
+}
+
+.back:hover {
+    font-style: normal;
+}
+
 
 
 @media (max-width:780px){

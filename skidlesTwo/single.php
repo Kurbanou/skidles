@@ -10,10 +10,18 @@
 get_header(Blog);
 ?>
 
-    <main>     
+    <main>
         <section class="singl">
             <div class="wrapper">
                 <h2><?php single_post_title(); ?></h2>
+				   <div onclick="window.location.href 	='http://skidles.by/novosti/';" class="back">
+                        <div class="backSvg">
+                            <div class="krug">
+                                <div class="treug"></div>
+                            </div>
+                        </div>
+                        <p>Вернуться назад к новостям</p>
+                    </div>
                 <div class="content post">
                     <?php the_content(); ?>
                 </div>
