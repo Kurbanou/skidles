@@ -33,13 +33,23 @@
 }
 
 .contact_item:last-child{
-    padding: 10px 20px;
-    background-color: var(--Green);
-    border-radius: 40px 0px 40px 0px;
+    transition: 0.25s;
+    padding: 1em;
+    background: none;
+    cursor: pointer;
+    border: 2px solid var(--activelink);
+    font-size: 13px;
 }
 
-.contact_item:last-child .contact_item_text{
-    color: white;
+.contact_item:last-child:hover, .contact_item:last-child:focus {
+    border-color: var(--activelink);
+    color: #fff;
+}
+
+.contact .slide:hover,
+.contact .slide:focus {
+  box-shadow: inset 12em 0 0 0 var(--activelink);
+  color: white !important;
 }
 
 .contact_item_text {

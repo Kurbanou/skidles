@@ -97,6 +97,49 @@
     animation: strok 1.5s reverse;
   }
 
+  .logoSt0{
+    fill:none;
+    stroke:#000;
+    stroke-width:5;
+    stroke-miterlimit:10;
+    stroke-dasharray:4240;
+    animation: strok2 2s linear;
+  }
+
+  .logoSt1{
+    fill:#000;
+    animation: check_c_o 1000ms linear 1 normal forwards
+  }
+
+  @keyframes check_c_o {
+    0% {opacity: 0}
+    79% {opacity: 0}
+    80% {opacity: 0.3}
+    100% {opacity: 1}
+  }
+
+  .logologoSt11{
+    fill:#000;
+    animation: check_c_o 1000ms linear 1 normal forwards
+  }
+
+
+  @keyframes check_c_o {
+    0% {opacity: 0}
+    79% {opacity: 0}
+    80% {opacity: 0.3}
+    100% {opacity: 1}
+  }
+
+  @keyframes strok2 {
+    0% {
+      stroke-dashoffset: 4240;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
 
 
   @keyframes strok {
@@ -133,3 +176,7 @@
       font-size: 0.8em;
     }
   }
+
+
+
+

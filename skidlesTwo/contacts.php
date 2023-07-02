@@ -6,7 +6,7 @@
 
 ?>
 
-    <main>
+  <main>
         <section class="contact">
             <div class="wrapper">
              <div class="contact__intro">
@@ -32,13 +32,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="contact_item">
-                        <div class="contact_item_icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/info.svg" alt="icon"></div>
-                        <div class="contact_item_text">
-                            <a href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/rekvizity.pdf" target="_blank">
-                                <p>Наши реквизиты</p>
-                            </a>
-                        </div>
+
+					 <div class="contact_item slide" onclick="window.location.href ='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/rekvizity.pdf';">
+                        <p>Наши реквизиты</p>
                     </div>
 
                 </div>
@@ -123,8 +119,6 @@
         </section>
 
     </main>
-
-
 
 
 
