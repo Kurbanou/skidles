@@ -22,8 +22,9 @@
 .plitka {
     display: flex;
     flex-wrap: wrap;
-    width: 310px;
+    width: 100%;
     gap: 10px;
+    justify-content: center;
 
 }
 
