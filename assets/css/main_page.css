@@ -192,6 +192,40 @@
         padding: 0 !important;
         border: 0;
     }
+    .admin-proc img {
+        display: none;
+    }
+
+    .admin-proc li {
+        justify-content: center;
+    }
+
+    .baza__otdyha img:nth-child(2) {
+        display: none;
+    }
+
+    .kachestvo {
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .kachestvo li{
+        width: 100%;
+        justify-content: center;
+    }
+    .baza__otdyha-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .baza__otdyha-item:first-child{
+        margin: 0;
+    }
+    .baza__otdyha {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 /* /intro */
