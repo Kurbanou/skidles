@@ -52,7 +52,6 @@
     background-size: cover;
     gap: 27px;
     background: white;
-    padding: 20px;
     -webkit-box-shadow: 0px 2px 3px  rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 2px 3px  rgba(0,0,0,0.25);
 	box-shadow: 0px 2px 3px  rgba(0,0,0,0.25);
@@ -101,7 +100,7 @@
 
 .title_post {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -136,12 +135,12 @@
     color: black;
 }
 
-
-
 .over_news {
     overflow: hidden;
     height: 720px;
     box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3);
+    margin: 0px 20px;
+
 }
 
 .arhiv__news {
@@ -192,15 +191,21 @@
 
 
 .contentMap {
-    height: 580px;
+    position: relative;
+    height: 590px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
-#iframe {
-    width: 100%;
+.iframe {
+    position: absolute;
+    width: 360px;
+    left: 50%;
+    top: 0;
+    /* width: 100%; */
     border : 0px;
-    transform: scale(1.07, 1)
+    transform: translate(-50%,0);
 }
 
 
