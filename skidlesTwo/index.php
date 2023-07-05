@@ -105,7 +105,7 @@ get_header();
                             </button>
                         </div>
                         <div class="contentMap">
-                            <iframe src="https://gplho.by/fire-map/#belarus-map" id="iframe" width="340" height="680" scrolling="no"></iframe>
+                            <iframe src="https://gplho.by/fire-map/#belarus-map" id="iframe" height="680" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>

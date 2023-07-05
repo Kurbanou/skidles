@@ -96,6 +96,7 @@
     text-align: justify;
 	font-size:13px;
 	color: var(--Gray);
+    font-weight: 300;
 }
 
 .title_post {
@@ -156,6 +157,7 @@
 .date_post {
     font-size: 13px;
     color: var(--Black_blue);
+    font-weight: 300;
 }
 
 .arhiv__news a{
@@ -164,7 +166,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 	font-size:13px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .arhiv__news:last-child{
@@ -196,6 +198,7 @@
 }
 
 #iframe {
+    width: 100%;
     border : 0px;
     transform: scale(1.07, 1)
 }
