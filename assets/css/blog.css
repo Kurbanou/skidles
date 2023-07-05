@@ -188,27 +188,17 @@
     margin: 0 auto;
 }
 
-.svgMap {
-    margin-top:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    transition: all linear .3s;
+
+.contentMap {
+    height: 580px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.svgMap:hover {
-    background-color: var(--Light_gray);
+#iframe {
+    border : 0px;
+    transform: scale(1.07, 1)
 }
-
-.region {
-    fill: var(--Green);
-}
-
-.region:hover {
-    fill: var(--activelink);
-}
-
 
 
 
