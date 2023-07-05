@@ -4,7 +4,7 @@
     background-color: #fcfcf4;
     color: black;
     flex-grow: 1;
-    padding:100px 0 20px 0;
+    padding:100px 0 40px 0;
     margin-top: -50px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .singl h4 {
-    line-height: 230%;
+    margin: 20px 0;
 }
 
 .singl {
@@ -148,10 +148,6 @@
 
 
 @media (max-width:780px){
-
-    .singl {
-        padding: 80px 0;
-    }
 
     .singl .content {
         margin-top: 40px;
