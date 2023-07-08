@@ -87,6 +87,8 @@
     stroke-linejoin: round;
     stroke-dasharray: 400;
     transition: all .3s linear;
+    animation: draw 5s reverse;
+    animation-iteration-count:infinite;
   }
 
   .more {
@@ -176,6 +178,31 @@
       font-size: 0.8em;
     }
   }
+
+
+
+
+
+@keyframes draw {
+  0%{
+    opacity: 1;
+    stroke: var(--activelink);
+
+  }
+
+  50% {
+
+    opacity: .2;
+    stroke: white;
+
+  }
+
+  100% {
+    opacity: 1;
+    stroke: var(--activelink);
+
+  }
+}
 
 
 
