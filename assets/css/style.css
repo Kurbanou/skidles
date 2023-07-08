@@ -20,9 +20,8 @@ Version: 2.0
 
 
 
-
 :root {
-    --Black_blue: #333B41;
+     --Black_blue: #333B41;
     --Gray: #767474;
     --Gray_smoky: #ABABAB;
     --Light_gray: #F1F3F2;
@@ -42,13 +41,21 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
-    background-color: var(--Light_gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    min-height: 100vh;
+	background-color: var(--Light_gray);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    line-height: 140%;
+    color: var(--Black_blue);
+	display:flex;
+	flex-direction:column;
+	align-items:space-between;
+	height: 100%;
+	min-height:100vh;
 }
 
 main {
@@ -218,22 +225,7 @@ a:hover *:before {
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: var(--Black_blue);
 
-
-
-	display:flex;
-	flex-direction:column;
-	align-items:space-between;
-	height: 100%;
-	min-height:100vh;
-}
 
 .wrapper {
     width: 100%;
@@ -254,6 +246,9 @@ body {
     }
 }
 
+.post {
+    text-indent: 30px;
+}
 
 h2 {
     font-family: 'Roboto';
@@ -261,7 +256,8 @@ h2 {
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
-    margin-bottom: 20px;
+	margin-bottom:20px;
+
 }
 
 h3,h4 {
@@ -295,7 +291,7 @@ h4 {
 
 @media (max-width:780px){
     h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     h4 {
