@@ -99,14 +99,23 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
     position: relative;
     margin-top: 50px;
-    height: 48px;
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    padding: 5px;
     font-size: 16px;
     font-style: italic;
     cursor: pointer;
-    line-height: 1em;
+    line-height: 2em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.back p{
+    transition: all .3s;
+}
+
+.back p:hover{
+    color: var(--activelink);
 }
 
 .backSvg {

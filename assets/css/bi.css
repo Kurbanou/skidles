@@ -1,0 +1,34 @@
+.bvi-shortcode {
+  padding: 0 !important;
+}
+.bvi-svg-eye{
+  font-size: inherit !important;
+}
+
+.bvi-widget, .bvi-shortcode a, .bvi-widget a, .bvi-shortcode{
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+.bvi-widget .bvi-svg-eye, .bvi-shortcode .bvi-svg-eye {
+    font-size: inherit !important;
+
+}
+
+.singl .bvi-shortcode {
+	display:flex !important;
+	justify-content:center;
+	margin-bottom:40px;
+}
+
+/* .singl .bvi-shortcode .bvi-svg-eye {
+	display:none;
+} */
+
+.bvi-open:hover{
+  color: var(--activelink) !important;
+}
+
+/* .page .bvi-open{
+  border: 2px solid  var( --bgColorMenu2);
+} */
