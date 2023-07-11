@@ -68,7 +68,7 @@ get_header();
 
 
                     <div class="inner_arhiv_post">
-						<p class="title_post">Новости</p>
+					<?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                         <div class="over_news">
                             <div class="news_inner">
                                 <?php

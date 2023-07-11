@@ -12,6 +12,12 @@ footer {
     row-gap: 20px;
 }
 
+  .lang{
+    position: fixed;
+    top: 13px;
+    right: 13px;
+  }
+
 
 
 .logo {

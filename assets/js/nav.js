@@ -14,7 +14,7 @@ export function nav(){
         for (let i = 0; i < li.length; i++){
             if (document.body.classList.contains('open')) {
                 li[i].style.transitionDelay = `${i * 0.1 + 0.65}s`;
-                links[i].setAttribute('data-text', links[i].innerHTML.slice(3,-4));
+                links[i].setAttribute('data-text', links[i].innerHTML.slice(3,-4).replace(/(\<(\/?[^>]+)>)/g, ''));
                 links.forEach(el => {
                     el.addEventListener('click', burger)
                 })
@@ -38,7 +38,7 @@ export function nav(){
 
     burgerMenu.addEventListener('click',burger);
 
-    // contactUs
+        // contactUs
 
     const footerButton = document.querySelector('.contactButton');
     const popupContactUs = document.querySelector('.contactUs');
@@ -63,7 +63,6 @@ export function nav(){
     footerButton.addEventListener('click',popupOpen);
     shadow.addEventListener('click', popupClose);
     Xicon.addEventListener('click', popupClose);
-
 
 }
 

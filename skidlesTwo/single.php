@@ -15,14 +15,15 @@ get_header(Blog);
             <div class="wrapper">
 
                 <h2><?php single_post_title(); ?></h2>
-				   <div class="back">
+				<?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+				   <div class="back" onclick="window.location.href 	='http://skidles.by/novosti/';">
                         <div class="backSvg">
                             <div class="krug">
                                 <div class="treug"></div>
                             </div>
                         </div>
-                        <p onclick="window.location.href 	='http://skidles.by/novosti/';">Вернуться назад к новостям</p>
-					    <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+                        <p>Вернуться назад к новостям</p>
+
                     </div>
                 <div class="content post">
                     <?php the_content(); ?>
