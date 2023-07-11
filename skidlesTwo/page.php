@@ -9,7 +9,6 @@
         <section class="singl page">
             <div class="wrapper">
                 <h2><?php single_post_title(); ?></h2>
-				<?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>

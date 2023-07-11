@@ -37,7 +37,7 @@
                             <a href="http://skidles.by/"><p>Главная</p></a>
                         </li>
                         <li>
-                            <a href="http://skidles.by/#Информация"><p>Информация</p></a>
+                            <a href="http://skidles.by/info/"><p>Информация</p></a>
                         </li>
                         <li>
                             <a href="http://skidles.by/kontakty/"><p>Контакты</p></a>
@@ -50,6 +50,24 @@
                         <p class="little">
                             Designed by Faridun Kurbanou kurbanou.faridun@gmail.com
                         </p>
+                    </div>
+                </div>
+				<div class="item6">
+                    <div class="workingHours">
+                      <div class="daysWeek">
+                        <div class="dayWeeek">ПН</div>
+                        <div class="dayWeeek">ВТ</div>
+                        <div class="dayWeeek">СР</div>
+                        <div class="dayWeeek">ЧТ</div>
+                        <div class="dayWeeek">ПТ</div>
+                        <div class="dayWeeek">СБ</div>
+                        <div class="dayWeeek">ВС</div>
+                      </div>
+                      <div class="regimRaboty">
+                        <p>Работаем c 8:00 - 17:00</p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/worckHours.svg" alt="obed">
+                        <p>13:00 - 14:00</p>
+                      </div>
                     </div>
                 </div>
 
@@ -69,4 +87,14 @@
             </div>
         </div>
 
+	<div class='lang'>
+		<div><?php echo do_shortcode('[gtranslate]'); ?></div>
+		<div><?php echo do_shortcode( '[bvi]' ); ?></div>
+	</div>
+
+
     </footer>
+    <?php wp_footer(); ?>
+
+</body>
+</html>

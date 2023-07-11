@@ -353,7 +353,8 @@ h4 {
 
 /* gtranslate */
 
-.gt_switcher_wrapper {
+.gt_switcher_wrapper,
+.lang{
 	position:fixed;
 	top:0 !important;
 	bottom: auto !important;
@@ -363,7 +364,7 @@ h4 {
 	align-items:center;
 	justify-content:center;
 	height:60px;
-	gap:5px;
+	gap:8px;
 	padding:5px 15px;
 	color: black;
 	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -374,4 +375,12 @@ h4 {
 
 .gt-current-lang{
 	color: white;
+}
+
+/* visual */
+
+.bvi-shortcode {
+	display: flex !important;
+	align-items: center;
+	justify-content:center;
 }
