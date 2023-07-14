@@ -247,11 +247,39 @@ footer {
     padding: 8px;
     background-color: rgba(255, 255, 255, .1);
     border-radius: 3px;
+    position: relative;
+    font-weight: normal;
 }
 
 .dayWeeek:nth-child(6),
-.dayWeeek:nth-child(7) {
-    background-color:var(--activelink);
+.dayWeeek:nth-child(7){
+    /* border: solid 1px var(--activelink);
+    color: var(--Red); */
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    color: black;
+}
+
+.dayWeeek:nth-child(6)::before,
+.dayWeeek:nth-child(6)::after,
+.dayWeeek:nth-child(7)::after,
+.dayWeeek:nth-child(7)::before {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   content: '';
+   height:1px;
+   background-color: var(--Red);
+   width: 100%;
+}
+
+.dayWeeek:nth-child(6)::before,
+.dayWeeek:nth-child(7)::before{
+    transform: rotate(45deg);
+}
+
+.dayWeeek:nth-child(6)::after,
+.dayWeeek:nth-child(7)::after{
+    transform: rotate(-45deg);
 }
 
 
