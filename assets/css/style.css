@@ -26,15 +26,24 @@ Version: 2.0
     --dark-link: #222; 
     --hover-link: #545454; 
     --inner-logo: #fff5ed;
-
     --golden-cream: #d3c4a6; 
     --green: #87e64b; 
+    --btn-color: #6f9a37;
     --dove-gray: #f6f6f6; 
+
     --font-size: 18px;
+    --section-padding: calc(1rem + 2vw) 0;
+
+
+    
     --font-familyVibes: "Lora", serif;    
     --font-nav: "Kablammo", serif;   
     --font-logo: "Bebas Neue", serif;   
-   
+    --font-h: "Oswald", serif;
+    --font-roboto: "Roboto", serif;
+
+    
+
     --header-text-color: #ccc;
     --header-link-color: #fff;
     --header-link-hover-color: #ecd8b5;
@@ -102,7 +111,7 @@ body {
 
 .wrapper {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   max-width: 1280px;
   margin: 0 auto;
  
@@ -127,25 +136,57 @@ a:focus {
   outline: none;
 }
 
+h1 a { 
+  color: var(--heading-color);  
+}
+
+h1 a:hover{
+  color: var(--link-hover-color);
+}
+
 p {
+  font-family: var(--font-familyVibes);
+  font-style: italic;
   text-indent: 1.5em;
   margin: 0 0 1.8em;
 }
 
-h1 {
-  font-size: calc(1rem + 2vw);
-  color: var(--heading-color);
+h1,
+h1 a,
+h2,
+h3 {
+  font-family: var(--font-h);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-h1:hover {
-  color: var(--link-hover-color);
+h1 {
+  font-size: calc(1rem + 2vw);
 }
 
 h2 {
   font-size: calc(1rem + 1vw);
 }
 
-h4,h5 {
+h3 {    
+  font-size: .8rem; 
+  position: relative;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+h3::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--golden-cream);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+h4,
+h5 {
   font-size: .9rem;  
   font-family: var(--font-familyVibes);
   font-weight: 100;
@@ -178,4 +219,25 @@ li {
 .noScroll {
   overflow: hidden;
   /* margin-right: 15px; */
+}
+
+
+button {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  cursor: pointer; 
+  padding: 20px;  
+  line-height: 0;
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  align-items: center;  
+}
+
+button:hover {
+  background-color: var(--button-background-hover-color);
+  color: var(--button-text-hover-color);
 }

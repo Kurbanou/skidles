@@ -67,7 +67,7 @@
 .logoSt1{
     fill:var(--inner-logo);
     animation: check_c_o 1000ms linear 1 normal forwards
-    }
+}
 
 @keyframes check_c_o {
     0% {opacity: 0}
@@ -102,4 +102,129 @@
     100% {
         stroke-dashoffset: 400;
     }
+}
+
+.social {
+    background-color: var(--dove-gray);    
+}
+
+.social_inner {
+    padding: var(--section-padding);
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;    
+    width: 100%;
+}
+
+
+
+
+.social a {
+    font-size: 1.8rem;
+    color: var(--heading-color);    
+    border: 3px solid transparent;
+    border-radius: 100%;
+    padding: 20px;
+    line-height: 0;   
+    transition: all .3s linear; 
+}
+
+.social a:hover {
+    color: var(--link-hover-color);
+    border: 3px solid var(--heading-color);
+
+}
+
+
+.produkt {
+    background-color: var(--dove-gray);  
+}
+
+.produkt .wrapper{
+    background-color:white;  
+    overflow: hidden;
+}
+
+.produkt_inner {
+    background-color: white;
+    width: 100%;
+    max-width: 750px;    
+    margin: 0 auto;
+    padding: var(--section-padding);
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.produkt_inner_content {
+    width: 350px;
+}
+
+.produkt_inner_content button {
+    margin-top: 60px;
+}
+
+.produkt_inner_slider {
+    position: relative;   
+    display: flex;
+    align-items: center;
+}
+
+.slider_btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: var(--button-background-color);
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: all .3s linear;
+    cursor: pointer;    
+    user-select: none;
+}
+
+.slider_btn:hover {
+    background-color: var(--button-background-hover-color);
+    transform: translate(-50%, -50%)  rotate(-180deg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.body-slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 360px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.body-slider img{
+    width: 230px;
+    border-radius: 35px;    
+    transition: all .6s linear;
+    order: 0;
+    
+}
+
+.body-slider :nth-child(2) {
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+   
+
+    
 }

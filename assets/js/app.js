@@ -1,3 +1,5 @@
+// +++++++++++++++++++++++++++++
+// burger
 const burger = document.querySelector('.burger-menu');  
 const navLinks = document.querySelectorAll('.nav li');  
 const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -35,33 +37,49 @@ handleMediaQueryChange(mediaQuery);
 mediaQuery.addEventListener("change", handleMediaQueryChange);  
 burger.addEventListener('click', toggleBurgerMenu);  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// +++++++++++++++++++++++++++++
+// logo
 const inner = document.querySelector('.intro_svg');
-inner.innerHTML = svg();
-inner.addEventListener('click',function(){
+if(inner){
+  inner.innerHTML = svg();
+  inner.addEventListener('click',function(){
     inner.innerHTML = svg();
-})
+  })
+}
+// +++++++++++++++++++++++++++++
+// slider
+
+document.querySelector('.slider_btn').addEventListener('click', function () {
+  const sliderBody = document.querySelector('.body-slider');
+  const firstImage = sliderBody.querySelector('img');
+  sliderBody.appendChild(firstImage);
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
