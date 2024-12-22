@@ -1,0 +1,40 @@
+
+
+/* animate Bg */
+
+@keyframes draw-circle {
+    from {
+        stroke-dasharray: 0 1000;
+    }
+    to {
+        stroke-dasharray: 1000 0;
+    }
+}
+
+/* .example {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    height: 70vmin;
+    width: 70vmin;
+} */
+
+#magic-path {
+    animation: draw-circle 5s linear ;
+}
+/* /animateBg */
+
+
+
+/*  EXAMPLE
+    <svg class='example'  viewBox="0 0 100 100">
+        <defs>
+            <mask id='mask-example'>
+                <circle cx='50' cy='50' r='48' fill='#fff' stroke='#000' stroke-width='1' />
+            </mask>
+        </defs
+        <path id='magic-path' d='M 10 10 L 90 10 L 10 20 L 50 50 L 10 30 L 10 90 L 20 50 L 30 90 L 40 50 L 40 90 L 80 90 L 50 80 L 90 80 L 50 60 L 90 65 L 30 40 L 30 30 L 90 30 L 60 40 L 90 40 L 80 50 L 90 51' stroke='#ff214f' stroke-width='20' fill='none' stroke-linecap='round' stroke-linejoin='round' mask='url(#mask-example)' /
+    </svg>
+*/

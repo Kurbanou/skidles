@@ -32,7 +32,7 @@ Version: 2.0
     --dove-gray: #f6f6f6; 
 
     --font-size: 18px;
-    --section-padding: calc(1rem + 2vw) 0;
+    --section-padding: calc(1rem + 5vw) 0;
 
 
     
@@ -69,6 +69,7 @@ Version: 2.0
     --button-text-color: #fff;
     --button-text-hover-color: #fff;
     --primary-nav-bg-color: #fff;
+    --primary-bg-color: #f6f6f6;
     --primary-nav-border-color: #f5f5f5;
     --primary-nav-link-color: #222;
     --primary-nav-link-hover-color: #a9874a;
@@ -107,14 +108,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   line-height: 1.8;  
+  background-color: var(--primary-bg-color);
 }
 
 .wrapper {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   max-width: 1280px;
-  margin: 0 auto;
- 
+  margin: 0 auto; 
+  background-color: var(--background-color);
+  border-radius: 35px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0 10px;
+  }
 }
 
 .decor {
@@ -165,7 +176,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + .7vw);
 }
 
 h3 {    
@@ -223,14 +234,16 @@ li {
 
 
 button {
-  font-family: var(--font-roboto);
-  font-weight: 300;
+  /* font-family: var(--font-roboto); */
+  font-family: var(--font-h);
+  font-size: .8rem;
+  /* font-weight: 300; */
   background-color: var(--button-background-color);
   color: var(--button-text-color);
   text-transform: uppercase;
   cursor: pointer; 
   padding: 20px;  
-  line-height: 0;
+  line-height: 1;
   width: fit-content;
   height: 60px;
   display: flex;

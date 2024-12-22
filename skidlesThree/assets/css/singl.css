@@ -1,0 +1,258 @@
+/* singl */
+.singl {
+    transition: 0.2s ease-out;
+    background-color: #fcfcf4;
+    color: black;
+    flex-grow: 1;
+    padding:100px 0 40px 0;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.singl h4 {
+    margin: 20px 0;
+    position: relative;
+	width: fit-content;
+	text-indent: 0;
+	font-weight:500;
+}
+
+
+
+.singl {
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+.singl li{
+    text-indent: 0px;
+    margin-left: 30px;
+	font-size: 20px;
+}
+
+.singl h2 {
+    text-align: center;
+}
+
+.singl h2::first-letter {
+    text-transform: uppercase;
+}
+
+.singl .content {
+    display: flex;
+    flex-direction: column;
+/*     margin: 20px 0; */
+    /* gap: 20px; */
+}
+
+.singl .content img {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 50vh;
+    padding: 4px;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.singl .post{
+    text-align: justify;
+}
+
+.singl table {
+    margin: 20px 0;
+    width: 100%;
+    border: none !important;
+}
+
+.singl  td {
+    /*border: 1px solid var(--Black_blue);*/
+    /*border-radius: 3px;*/
+    width:  fit-content;
+    /*background-color: white;*/
+    padding:10px;
+    margin: 20px auto;
+    border: 3px solid #fcfcf4;
+
+}
+
+
+.singl  tr:nth-child(even) {
+    background-color: rgba(152, 178, 150, .2);
+}
+
+.singl  tr:nth-child(odd) {
+    background-color: rgba(152, 178, 150, .5);
+}
+
+.singl  th {
+    color: var(--activelink);
+    border: 1px solid var(--Black_blue);
+}
+
+.back {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    line-height: 2em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.back p{
+    transition: all .3s;
+}
+
+.back p:hover{
+    color: var(--activelink);
+}
+
+.backSvg {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    width: 32px;
+    height: 32px;
+    background-color: rgba(000, 000, 000, 0.1);
+    border-radius: 100%;
+    transition: all linear .3s;
+}
+
+.backSvg .krug{
+    position: absolute;
+    background-color: #98b296;
+    border-radius: 100%;
+    top: 4px;
+    left: 4px;
+    transition: all linear .3s;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.treug {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    border: 8px solid transparent; border-bottom: 8px solid white;
+}
+
+.back:hover .krug{
+    transform: rotate(-90deg);
+}
+
+.back:hover {
+    font-style: normal;
+}
+
+
+
+@media (max-width:780px){
+
+    .singl .content {
+        margin-top: 40px;
+    }
+
+}
+
+
+/* /singl */
+
+.plitka {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	justify-content: center;
+	padding: 20px 0;
+    gap: 10px;
+}
+
+.plitka li{
+    opacity: 0;
+    list-style: none;
+    width: fit-content;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    border: 2px solid  var( --bgColorMenu2);
+    transition: all .8s linear;
+    color:black;
+    -webkit-animation: toTop 0.8s ease-out forwards;
+          animation: toTop 0.8s ease-out forwards;
+	margin: 0;
+    text-indent: 0;
+}
+
+.plitka li :last-child{
+	 padding: .5em 1em;
+}
+
+font{
+    padding: 0 !important;
+}
+
+.plitka li:hover {
+    box-shadow: inset 50em 0 0 0 var( --bgColorMenu2);
+}
+
+.plitka li:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.plitka li:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.plitka li:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.plitka li:nth-child(4) {
+    animation-delay: .8s;
+}
+.plitka li:nth-child(5) {
+    animation-delay: 1s;
+}
+.plitka li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.plitka li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.plitka li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.plitka li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.plitka li:nth-child(10) {
+    animation-delay: 2s;
+}
+
+.plitka li:hover {
+    opacity: .8 !important;
+}
+.plitka li:active {
+    box-shadow: none;
+    transition: all .1s linear;
+}
+
+.imageBox img{
+    width:80vh;
+}

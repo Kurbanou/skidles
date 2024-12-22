@@ -1,0 +1,256 @@
+/*
+Theme Name: Скидельский лесхоз
+Author: Kurbanou Faridun
+Version: 2.0
+*/
+
+/* main-css */
+@import url(../../assets/fonts/roboto.css);
+@import url(../../assets/css/reset.css);
+@import url(../../assets/css/main_page.css);
+@import url(../../assets/css/nav.css);
+
+@import url(../../assets/css/popup.css);
+
+@import url(../../assets/css/footer.css);
+@import url(../../assets/css/blog.css);
+@import url(../../assets/css/singl.css);
+@import url(../../assets/css/contact.css);
+@import url(../../assets/css/sertification.css);
+@import url(../../assets/css/404.css);
+
+:root {
+    --dark-color: #262626; 
+    --dark-font: #545454; 
+    --dark-head: #222; 
+    --dark-link: #222; 
+    --hover-link: #545454; 
+    --inner-logo: #fff5ed;
+    --golden-cream: #d3c4a6; 
+    --green: #87e64b; 
+    --btn-color: #6f9a37;
+    --dove-gray: #f6f6f6; 
+
+    --font-size: 18px;
+    --section-padding: calc(1rem + 5vw) 0;
+
+
+    
+    --font-familyVibes: "Lora", serif;    
+    --font-nav: "Kablammo", serif;   
+    --font-logo: "Bebas Neue", serif;   
+    --font-h: "Oswald", serif;
+    --font-roboto: "Roboto", serif;
+
+    
+
+    --header-text-color: #ccc;
+    --header-link-color: #fff;
+    --header-link-hover-color: #ecd8b5;
+    --logo-max-width: 200px;
+    --search-icon-color: #fff;
+    --social-button-icon-color: #fff;
+    --social-button-icon-hover-color: #fff;
+    --social-button-border-color: rgba(255, 255, 255, .2);
+    --social-button-border-hover-color: rgba(255, 255, 255, .4);
+    --background-color: #fff;
+    --text-color: #333;
+    --secondary-text-color: #aaa;
+    --heading-color: #222;
+    --link-color: #222;
+    --link-hover-color: #665;
+    --paragraph-link-color: #c8ab77;
+    --paragraph-link-hover-color: #a9874a;
+    --category-underline-color: #f5e9d9;
+    --category-link-color: #222;
+    --category-link-hover-color: #665;
+    --button-background-color: #cbb78f;
+    --button-background-hover-color: #bba579;
+    --button-text-color: #fff;
+    --button-text-hover-color: #fff;
+    --primary-nav-bg-color: #fff;
+    --primary-bg-color: #f6f6f6;
+    --primary-nav-border-color: #f5f5f5;
+    --primary-nav-link-color: #222;
+    --primary-nav-link-hover-color: #a9874a;
+    --primary-nav-submenu-bg-color: #f5f5f5;
+    --primary-nav-submenu-link-color: #222;
+    --primary-nav-submenu-link-hover-color: #a9874a;
+    --primary-nav-divider-color: #ddd;
+    --input-placeholder-color: #bababa;
+}
+
+
+
+
+html {
+  font-size: var(--font-size);
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@media (max-width: 991px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+      font-size: 14px;
+  }
+}
+
+body {
+  font-family: var(--font-familyVibes);
+  font-size: 1rem;  
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.8;  
+  background-color: var(--primary-bg-color);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1280px;
+  margin: 0 auto; 
+  background-color: var(--background-color);
+  border-radius: 35px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}
+
+.decor {
+  font-family: var(--font-familyVibes);
+}
+
+a {
+  transition: all .2s ease-out;
+  text-decoration: none;
+  color: var(--paragraph-link-color);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--paragraph-link-hover-color);
+}
+
+a:focus {
+  outline: none;
+}
+
+h1 a { 
+  color: var(--heading-color);  
+}
+
+h1 a:hover{
+  color: var(--link-hover-color);
+}
+
+p {
+  font-family: var(--font-familyVibes);
+  font-style: italic;
+  text-indent: 1.5em;
+  margin: 0 0 1.8em;
+}
+
+h1,
+h1 a,
+h2,
+h3 {
+  font-family: var(--font-h);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: calc(1rem + 2vw);
+}
+
+h2 {
+  font-size: calc(1rem + .7vw);
+}
+
+h3 {    
+  font-size: .8rem; 
+  position: relative;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+h3::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--golden-cream);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+h4,
+h5 {
+  font-size: .9rem;  
+  font-family: var(--font-familyVibes);
+  font-weight: 100;
+  font-style: italic;
+  color: var(--secondary-text-color);
+}
+
+h5 {
+  color: var(--paragraph-link-color);
+}
+
+ul, ol {
+  margin: 0 0 1.8em 2em;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;  
+}
+
+ol {
+  list-style: decimal;  
+}
+
+li {
+  display: list-item; 
+}
+
+
+.noScroll {
+  overflow: hidden;
+  /* margin-right: 15px; */
+}
+
+
+button {
+  /* font-family: var(--font-roboto); */
+  font-family: var(--font-h);
+  font-size: .8rem;
+  /* font-weight: 300; */
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  cursor: pointer; 
+  padding: 20px;  
+  line-height: 1;
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  align-items: center;  
+}
+
+button:hover {
+  background-color: var(--button-background-hover-color);
+  color: var(--button-text-hover-color);
+}
