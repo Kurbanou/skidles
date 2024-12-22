@@ -1,343 +1,254 @@
 /*
 Theme Name: Скидельский лесхоз
 Author: Kurbanou Faridun
-Version: 2.0
+Version: 3.0
 */
 
 /* main-css */
 @import url(assets/fonts/roboto.css);
+@import url(assets/css/reset.css);
 @import url(assets/css/main_page.css);
 @import url(assets/css/nav.css);
-@import url(assets/css/tab_bar.css);
 @import url(assets/css/popup.css);
-@import url(assets/css/svgAnimate.css);
 @import url(assets/css/footer.css);
 @import url(assets/css/blog.css);
-@import url(assets/css/single.css);
+@import url(assets/css/singl.css);
 @import url(assets/css/contact.css);
+@import url(assets/css/sertification.css);
 @import url(assets/css/404.css);
-@import url(assets/css/bi.css);
-
-
-
-
 
 :root {
-    --Black_blue: #333B41;
-    --Gray: #767474;
-    --Gray_smoky: #ABABAB;
-    --Light_gray: #F1F3F2;
-    --Yellow: #FFEE2E;
-    --Red: #D31414;
-    --Green:#4B9200;
-    --burger-color:#333B41;
-    --links-menu: #FDFDFF;
-    --activelink: #F9804B;
-    --bgColorMenu: #333B41;
-    --duration: 0.7s;
+    --dark-color: #262626; 
+    --dark-font: #545454; 
+    --dark-head: #222; 
+    --dark-link: #222; 
+    --hover-link: #545454; 
+    --inner-logo: #fff5ed;
+    --golden-cream: #d3c4a6; 
+    --green: #87e64b; 
+    --btn-color: #6f9a37;
+    --dove-gray: #f6f6f6; 
+
+    --font-size: 18px;
+    --section-padding: calc(1rem + 5vw) 0;
+
+
+    
+    --font-familyVibes: "Lora", serif;    
+    --font-nav: "Kablammo", serif;   
+    --font-logo: "Bebas Neue", serif;   
+    --font-h: "Oswald", serif;
+    --font-roboto: "Roboto", serif;
+
+    
+
+    --header-text-color: #ccc;
+    --header-link-color: #fff;
+    --header-link-hover-color: #ecd8b5;
+    --logo-max-width: 200px;
+    --search-icon-color: #fff;
+    --social-button-icon-color: #fff;
+    --social-button-icon-hover-color: #fff;
+    --social-button-border-color: rgba(255, 255, 255, .2);
+    --social-button-border-hover-color: rgba(255, 255, 255, .4);
+    --background-color: #fff;
+    --text-color: #333;
+    --secondary-text-color: #aaa;
+    --heading-color: #222;
+    --link-color: #222;
+    --link-hover-color: #665;
+    --paragraph-link-color: #c8ab77;
+    --paragraph-link-hover-color: #a9874a;
+    --category-underline-color: #f5e9d9;
+    --category-link-color: #222;
+    --category-link-hover-color: #665;
+    --button-background-color: #cbb78f;
+    --button-background-hover-color: #bba579;
+    --button-text-color: #fff;
+    --button-text-hover-color: #fff;
+    --primary-nav-bg-color: #fff;
+    --primary-bg-color: #f6f6f6;
+    --primary-nav-border-color: #f5f5f5;
+    --primary-nav-link-color: #222;
+    --primary-nav-link-hover-color: #a9874a;
+    --primary-nav-submenu-bg-color: #f5f5f5;
+    --primary-nav-submenu-link-color: #222;
+    --primary-nav-submenu-link-hover-color: #a9874a;
+    --primary-nav-divider-color: #ddd;
+    --input-placeholder-color: #bababa;
 }
+
+
+
 
 html {
-    scroll-behavior: smooth;
+  font-size: var(--font-size);
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@media (max-width: 991px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+      font-size: 14px;
+  }
 }
 
 body {
-    background-color: var(--Light_gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    min-height: 100vh;
-}
-
-
-.button {
-    width: fit-content;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all .1s linear;
-    user-select: none;
-    padding:0 20px;
-}
-
-.button:hover,
-.arrow:hover {
-    background: #E47209;
-}
-
-.button:active,
-.arrow:active {
-    background: var(--Green);
-}
-
-.arrow {/* 07052023 */
-    width: fit-content;
-    height: 54px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 4px;
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-    padding:0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: white;
-    transition:  all .3s linear;
-}
-
-.disable,
-.disable:hover,
-.disable:active {/* 07052023 */
-    /* background: var(--Gray); */
-    background: transparent;
-    box-shadow: inset 1px 1px 6px rgba(0,0,0,0.1);
-    cursor: unset;
-}
-
-
-
-.locked {
-    overflow: hidden;
-}
-
-img {
-    display: block;
-}
-
-ul li {
-  list-style-position: inside;
-
-
-
-}
-
-
-
-
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    transition: color .3s linear;
-}
-
-.submit {
-    width: 130px;
-    height: 42px;
-    display: flex;
-    line-height: 0;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px var(--Black_blue);
-    color: black;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    border-radius: 5px;
-    background: var(--Light_gray);
-    cursor: pointer;
-}
-
-.submit:hover {
-    color: var(--activelink);
-    border: solid 2px var(--activelink);
-    background: var(--Light_gray);
-
-}
-
-.submit:invalid {
-    border: solid 1px var(--Rad);
-    color: var(--Rad);
-}
-
-.submit:active{
-    border: solid 1px var(--Green);
-    color: var(--Green);
-    background: var(--Light_gray);
-}
-
-.active,
-a *:hover {
-    color: var(--activelink) ;
-}
-
-a *:active{
-    color: var(--Green) !important;
-}
-
-
-
-a *::before {
-    content: '';
-    height: 2px;
-    background-color: var(--activelink);
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    display: block;
-    transition: all .3s linear;
-}
-
-a:hover *:before {
-    width: 100%;
-}
-
-
-*,
-:before,
-:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: var(--Black_blue);
-
-
-
-	display:flex;
-	flex-direction:column;
-	align-items:space-between;
-	height: 100%;
-	min-height:100vh;
+  font-family: var(--font-familyVibes);
+  font-size: 1rem;  
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.8;  
+  background-color: var(--primary-bg-color);
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 1260px;
-    padding: 0 30px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1280px;
+  margin: 0 auto; 
+  background-color: var(--background-color);
+  border-radius: 35px;
+  margin: 40px auto;
+  overflow: hidden;
 }
 
-@media (max-width:640px){
-    .wrapper {
-        padding: 0 20px;
-    }
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0 10px;
+  }
 }
 
-@media (max-width:400px){
-    .wrapper {
-        padding: 0 10px;
-    }
+.decor {
+  font-family: var(--font-familyVibes);
 }
 
-.post {
-    text-indent: 30px;
+a {
+  transition: all .2s ease-out;
+  text-decoration: none;
+  color: var(--paragraph-link-color);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--paragraph-link-hover-color);
+}
+
+a:focus {
+  outline: none;
+}
+
+h1 a { 
+  color: var(--heading-color);  
+}
+
+h1 a:hover{
+  color: var(--link-hover-color);
+}
+
+p {
+  font-family: var(--font-familyVibes);
+  font-style: italic;
+  text-indent: 1.5em;
+  margin: 0 0 1.8em;
+}
+
+h1,
+h1 a,
+h2,
+h3 {
+  font-family: var(--font-h);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: calc(1rem + 2vw);
 }
 
 h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 120%;
-
+  font-size: calc(1rem + .7vw);
 }
 
-h3,h4 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 130%;
+h3 {    
+  font-size: .8rem; 
+  position: relative;
+  width: fit-content;
+  margin-bottom: 10px;
 }
 
-h4 {
-    font-size: 24px;
-}
-.subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-}
-
-
-.open .singl {
-    transform: scale(0.92);
-    transition: transform 0.2s 0.41s ease-out;
+h3::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--golden-cream);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }
 
-
-
-
-
-@media (max-width:780px){
-    h2 {
-        font-size: 24px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
+h4,
+h5 {
+  font-size: .9rem;  
+  font-family: var(--font-familyVibes);
+  font-weight: 100;
+  font-style: italic;
+  color: var(--secondary-text-color);
 }
 
+h5 {
+  color: var(--paragraph-link-color);
+}
 
+ul, ol {
+  margin: 0 0 1.8em 2em;
+  padding: 0;
+}
 
-.little {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 130%;
-    text-align: end;
+ul {
+  list-style: disc;  
+}
+
+ol {
+  list-style: decimal;  
+}
+
+li {
+  display: list-item; 
 }
 
 
-.toTop {
-    -webkit-animation: toTop 0.8s ease-out forwards;
-          animation: toTop 0.8s ease-out forwards;
-  }
-
-@-webkit-keyframes toTop {
-    0% {
-      opacity: 0;
-      transform: translate3d(0,0,0);
-
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate3d(0,36px,0);
-    }
+.noScroll {
+  overflow: hidden;
+  /* margin-right: 15px; */
 }
 
-@keyframes toTop {
-    0% {
-        opacity: 0;
-        transform: translate3d(0,36px,0);
 
-      }
+button {
+  /* font-family: var(--font-roboto); */
+  font-family: var(--font-h);
+  font-size: .8rem;
+  /* font-weight: 300; */
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  cursor: pointer; 
+  padding: 20px;  
+  line-height: 1;
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  align-items: center;  
+}
 
-      100% {
-          opacity: 1;
-          transform: translate3d(0,0,0);
-      }
+button:hover {
+  background-color: var(--button-background-hover-color);
+  color: var(--button-text-hover-color);
 }
