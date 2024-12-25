@@ -1,5 +1,6 @@
 // +++++++++++++++++++++++++++++
 // burger
+
 const burger = document.querySelector('.burger-menu');  
 const navLinks = document.querySelectorAll('.nav li');  
 const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -39,6 +40,7 @@ burger.addEventListener('click', toggleBurgerMenu);
 
 // +++++++++++++++++++++++++++++
 // logo
+
 const inner = document.querySelector('.intro_svg');
 if(inner){
   inner.innerHTML = svg();
@@ -49,12 +51,52 @@ if(inner){
 // +++++++++++++++++++++++++++++
 // slider
 
-document.querySelector('.slider_btn').addEventListener('click', function () {
-  const sliderBody = document.querySelector('.body-slider');
-  const firstImage = sliderBody.querySelector('img');
-  sliderBody.appendChild(firstImage);
-  
+const sliderBtn = document.querySelector('.slider_btn');
+
+if(sliderBtn){
+  sliderBtn.addEventListener('click', function () {
+    const sliderBody = document.querySelector('.body-slider');
+    const firstImage = sliderBody.querySelector('img');
+    sliderBody.appendChild(firstImage);
+    
+  });
+
+}
+
+
+
+
+// +++++++++++++++++++++++++++++
+// img content
+
+const singleContainer = document.querySelector('.single-content');
+
+if(singleContainer && window.matchMedia('(min-width: 767px)').matches){
+  document.querySelectorAll('.single-content img').forEach(img => {
+    img.addEventListener('click', () => createWiebox(img));
 });
+}
+
+function createWiebox (img) {
+  document.querySelector('body').classList.add('noScroll')
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.innerHTML = `<div class="popup_inner">
+                <div class="close_popup"></div>
+                <img src="${img.src}" alt="">
+            </div>`;
+  document.querySelector('footer').append(popup);
+  document.querySelector('.close_popup').addEventListener('click',clsPopup);
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) clsPopup();
+  });
+}
+
+function clsPopup (){  
+  document.querySelector('body').classList.remove('noScroll');
+  document.querySelector('.popup').remove();  
+}
+
 
 
 

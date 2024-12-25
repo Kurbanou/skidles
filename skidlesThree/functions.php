@@ -1,5 +1,11 @@
 <?php
 
+function custom_excerpt($excerpt) {  
+    return wp_trim_words($excerpt, 20, '...');  
+}  
+
+add_filter('the_excerpt', 'custom_excerpt');  
+
 add_action( 'after_setup_theme', 'skidles_theme_setup' );
 function skidles_theme_setup() {
     // Поддержка миниатюр
@@ -26,22 +32,31 @@ function skidles_enqueue_module_script() {
 add_action('wp_enqueue_scripts', 'skidles_enqueue_module_script');
 
 function skidles_enqueue_styles() {
-    wp_enqueue_style(
-        'skidles-main-style', // Уникальный идентификатор
-        get_stylesheet_uri(), // Путь к файлу style.css (не добавляем дополнительный путь)
-        array(), // Зависимости (оставьте пустым, если нет зависимостей)
-        '2.0' // Версия файла
-    );
+    // Определяем путь к директории темы
+    $theme_dir = get_template_directory_uri();
 
-	  // Подключаем Google Fonts
-	  wp_enqueue_style(
+    // Подключаем Google Fonts
+    wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap',
-        array(),
+		
+        [], 
         null
     );
+
+    // Подключаем основной файл стилей темы в конце, чтобы он загружался последним
+    wp_enqueue_style(
+        'skidles-main-style', 
+        get_stylesheet_uri(), 
+        [], 
+        '2.0'
+    );
 }
+
 add_action('wp_enqueue_scripts', 'skidles_enqueue_styles');
+
+
+
 
 
 function skidles_enqueue_fontawesome() {
@@ -54,3 +69,15 @@ function skidles_enqueue_fontawesome() {
     );
 }
 add_action('wp_enqueue_scripts', 'skidles_enqueue_fontawesome');
+
+
+// Чтобы контролировать количество записей на странице для пагинации, используйте параметр posts_per_page в запросе. Для главной страницы блога это можно сделать так:
+
+function custom_posts_per_page( $query ) {
+    if ( $query->is_main_query() && !is_admin() ) {
+        if ( $query->is_home() ) {
+            $query->set( 'posts_per_page', 6 );
+        }
+    }
+}
+add_action( 'pre_get_posts', 'custom_posts_per_page' );

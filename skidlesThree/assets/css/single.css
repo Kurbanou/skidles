@@ -1,0 +1,33 @@
+/* single */
+
+.single .wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.single h1,
+.single h4 {
+    text-align: center;
+}
+
+.single h4 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.single-content img {
+    width: 100%;
+    max-width: 350px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+
+
+
+
+

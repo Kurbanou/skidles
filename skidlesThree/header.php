@@ -22,11 +22,11 @@
                 </a>
             </div>
             <ul class="nav">
-                <li><a href="https://skidles.by/">Главная</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>                
+                <li><a href="<?php echo home_url(); ?>">Главная</a></li>
+                <li><a href="<?php echo home_url(); ?>/produkts/">Продукция</a></li>
+                <li><a href="<?php echo home_url(); ?>/info">Информация</a></li>
+                <li><a href="<?php echo home_url(); ?>/novosti">Новости</a></li>
+                <li><a href="<?php echo home_url(); ?>/nashi-kontakty/">Контакты</a></li>                
             </ul>
             <div class="burger-menu"></div>  
         </div>        

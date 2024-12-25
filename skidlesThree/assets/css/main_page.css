@@ -111,8 +111,12 @@
     align-items: center;
     gap: 20px;    
     width: 100%;
-    margin-bottom: 30px;
+    
 }
+
+.produkt .social_inner {
+    margin-bottom: 30px;
+} 
 
 .social a {
     font-size: 1.8rem;

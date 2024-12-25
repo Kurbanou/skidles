@@ -1,6 +1,7 @@
 footer {
     background-color: white;
-    padding: 30px 0;    
+    padding: 30px 0;   
+    margin-top: auto;
 }
 
 footer h3,
@@ -41,8 +42,7 @@ footer {
     line-height: 1;
 }
 
-.priem {
-    border: 1px solid var(--primary-bg-color);
+.priem {    
     width: 100%;
     max-width: 350px;
     display: flex;

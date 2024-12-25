@@ -1,16 +1,18 @@
 <?php
 
-    get_header(Blog);
+    get_header();
 
 /* Template name: page */
 
 ?>
-    <main>
-        <section class="singl page">
+   <main>
+        <section class="single">
             <div class="wrapper">
-                <h2><?php single_post_title(); ?></h2>
-                <div class="content">
-                    <?php the_content(); ?>
+                <div class="single_inner">
+                    <h1><?php the_title(); ?></h1>                    
+                    <div class="single-content">
+                        <?php the_content(); ?>
+                    </div>
                 </div>
             </div>
         </section>
@@ -20,7 +22,3 @@
 
 
 <?php get_footer( ); ?>
-
-
-<!-- <?php echo esc_url( get_template_directory_uri() ); ?> -->
-

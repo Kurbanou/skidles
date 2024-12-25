@@ -14,106 +14,63 @@
 
  */
 
-get_header();
-?>
 
-	<main>
-        <section class="blog_post">
-            <div class="wrapper">
-                <div class="inner_blog_post">
+get_header(); ?>  
 
-                    <div class="last-news__inner">
-                        <?php
-                            //  <!--выводим 6 записей-->
-                            $posts = get_posts( array(
-                                'numberposts' => 6,
-                                'category'    => 0,
-                                'orderby'     => 'date',
-                                'order'       => 'DESC',
-                                'include'     => array(),
-                                'exclude'     => array(),
-                                'meta_key'    => '',
-                                'meta_value'  =>'',
-                                'post_type'   => 'post',
-                                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-                            ));
+<main>  
+    <section class="single">  
+        <div class="wrapper"> 
+			 <div class="news-content"> 
+				 <?php if ( have_posts() ) : ?>  
+                <?php while ( have_posts() ) : the_post(); ?>  
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>  
+                        <h2> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>  
+						<h4> Опубликовано: <?php echo get_the_date('F j, Y'); ?> </h4>  
+                        <div class="post-content">
+							 <?php   
+                                    // Check if a post thumbnail has been set  
+                                    if ( has_post_thumbnail() ) {  
+                                        // Display the thumbnail  
+                                        echo '<a href="' . get_permalink() . '">' . get_the_post_thumbnail( get_the_ID(), 'medium' ) . '</a>';   
+                                    } else {  
+                                        echo '<p>Изображение не найдено.</p>'; // Message if the thumbnail is absent  
+                                    }  
+                                ?>                            
+							<div>
+								<?php the_excerpt(); ?>
+							</div>                    
+<!--                             <div class="read-more">
+								<a href="<?php the_permalink(); ?>" > <i class="fa-solid fa-up-right-from-square"></i> Смотреть запись</a>
+							</div>                         -->
+                        </div>                      
+                    </article>  
+                <?php endwhile; ?> 
+				  <?php else : ?>  
+                <p>Записей не найдено.</p>  
+            <?php endif; ?> 
+				 </div>
 
-                            foreach( $posts as $post ){
-                            setup_postdata($post);
-                        ?>
+                <div class="pagination">  
+                    <?php  
+                    the_posts_pagination( array(  
+                        'mid_size'  => 2, // Количество страниц до и после текущей  
+                        'prev_text' => '← Назад',  
+                        'next_text' => 'Вперёд →',  
+                    ) );  
+                    ?>  
+                </div>  
 
-                            <div class="postAticle">
-                                <div class="last-news__img">
-                                    <img src="<?php echo get_the_post_thumbnail_url();?>" alt="news">
-                                </div>
-                                <div class="last-news__content">
-                                    <div class="title_post">
-                                        <?php the_title(); ?>
-                                    </div>
-                                    <div class="separator"></div>
-                                    <div class="text_post">
-                                        <p><?php echo get_the_excerpt() ?></p>
-                                    </div>
-                                    <div class="separator"></div>
-                                    <div class="last-news__date">
-                                        <h2><?php the_time('j F'); ?></h2>
-                                    </div>
-                                    <div class="last-news__button">
-                                        <div onclick="window.location.href ='<?php echo get_permalink(); ?>';" class="buttonPost slide">Подробнее...</div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } wp_reset_postdata(); ?>
-                    </div>
+            
+        </div>  
+    </section>  
+</main>  
+
+<?php get_footer(); ?>
 
 
-                    <div class="inner_arhiv_post">
-					<?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
-                        <div class="over_news">
-                            <div class="news_inner">
-                                <?php
-                                    //  <!--выводим записи-->
-                                    $posts = get_posts( array(
-                                        'numberposts' => 999,
-                                        'category'    => 0,
-                                        'orderby'     => 'date',
-                                        'order'       => 'DESC',
-                                        'include'     => array(),
-                                        'exclude'     => array(),
-                                        'meta_key'    => '',
-                                        'meta_value'  =>'',
-                                        'post_type'   => 'post',
-                                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-                                    ) );
-                                    foreach( $posts as $post ){
-                                        setup_postdata($post);
-                                        // формат вывода the_title() ...
-                                    ?>
-                                    <div class="arhiv__news">
-                                        <p class="date_post"><?php echo get_the_date(); ?></p>
-                                        <a  href="<?php echo get_permalink(); ?>"><p><?php the_title(); ?></p></a>
-                                    </div>
-                                <?php } wp_reset_postdata(); ?>
-                            </div>
-                        </div>
-                        <div class="controls">
-                            <button class="arrow up disable">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/up.svg" width="10" alt="svg">
-                            </button>
-                            <button class="arrow down">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/down.svg" width="10" alt="svg">
-                            </button>
-                        </div>
-                        <div class="contentMap">
-                            <iframe src="https://gplho.by/fire-map/#belarus-map" class="iframe" height="800" scrolling="no"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="../wp-content/themes/skidlesTwo/assets/js/blog/script.js" type="module"></script>
-
-<?php
-
-get_footer();
+<!-- Примечания:
+Если на странице блога отображается большое количество записей, обязательно проверьте настройки пагинации:
+В админке WordPress перейдите в Настройки → Чтение.
+Убедитесь, что указано нужное количество записей на странице.
+Если используются произвольные запросы через WP_Query, для работы пагинации нужно настроить параметр paged. -->
+ 

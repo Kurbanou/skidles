@@ -12,21 +12,15 @@
             <div class="intro_svg"></div>
         </section>  
        
-        <div class="wrapper">
-            <section class="produkt">
-                <div class="social social_inner">                   
-                    <a href="https://www.instagram.com/skidles_1/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/instagram.svg" alt="icon" width="14px"></a>
-                    <a href="https://t.me/skidles_by" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/telegram.svg" alt="icon" width="14px"></a>
-                    <a href="https://www.facebook.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/facebook.svg" alt="icon" width="14px"></a>
-                    <a href="https://twitter.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/x_icon.svg" alt="icon" width="14px"></a>                
-                    <a href="https://www.youtube.com/channel/UCEPbuES4gWuvW2dW8EIX7hQ/featured?view_as=subscriber" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/youtube.svg" alt="icon" width="14px"></a>                
-               </div>
+        
+            <section class="produkt"> 
+				<div class="wrapper">
                 <div class="produkt_inner">
                    <div class="produkt_inner_content">
                         <h3>выбирай</h3>
                         <h2>наша продукция</h2>                        
                         <p>У нас вы найдете высококачественные лесоматериалы, щепу, гранулы, мёд, новогодние деревья и многое другое.</p>
-                        <a class="section-button" href="" target="_blank">
+                        <a class="section-button" href="<?php echo home_url(); ?>/produkts/">
                             <button>Изучить цены на продукцию</button>
                         </a>                         
                    </div> 
@@ -39,11 +33,13 @@
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/product/4.jpg" alt="img-produkt">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/product/5.jpg" alt="img-produkt">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/product/6.jpg" alt="img-produkt">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/product/7.jpg" alt="img-produkt">
                         </div>                      
                    </div>                   
-                </div>                
+                </div> </div>                 
             </section>
-            <section class="quality ">  
+            <section class="quality "> 
+				 <div class="wrapper">
                 <div class="quality_inner">                    
                     <div class="quality_inner-img">                       
                         <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/21012/org-page" target="_blank">
@@ -58,9 +54,11 @@
                         </a> 
                     </div>
                 </div>
+					  </div>
             </section>
 
             <section class="dalnee"> 
+				<div class="wrapper">
                 <div class="dalnee_inner">                
                     <div class="dalnee_inner-content">
                         <h2>База отдыха "Дальнее"</h2>  
@@ -74,10 +72,21 @@
                     <div class="dalnee_inner-img">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/jpg/dalnee/3.jpg" alt="dalnee" >
                     </div>
-                </div>   
+                </div></div> 
             </section>
+			<section class="social"> 
+				<div class="wrapper">
+			   <div class="social_inner">
+				   
+                    <a href="https://www.instagram.com/skidles_1/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/instagram.svg" alt="icon" width="14px"></a>
+                    <a href="https://t.me/skidles_by" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/telegram.svg" alt="icon" width="14px"></a>
+                    <a href="https://www.facebook.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/facebook.svg" alt="icon" width="14px"></a>
+                    <a href="https://twitter.com/minleshoz" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/x_icon.svg" alt="icon" width="14px"></a>                
+                    <a href="https://www.youtube.com/channel/UCEPbuES4gWuvW2dW8EIX7hQ/featured?view_as=subscriber" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/svg/youtube.svg" alt="icon" width="14px"></a>                
+               </div> </div>
+			</section>
 
-        </div>
+       
        
 
   
