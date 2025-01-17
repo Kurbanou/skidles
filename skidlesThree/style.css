@@ -199,6 +199,7 @@ color: var(--text-color);
 -webkit-text-size-adjust: 100%;
 line-height: 1.8;  
 background-color: var(--primary-bg-color);  
+	
 min-height: 100vh;
 display: flex;
 flex-direction: column;  
@@ -496,16 +497,19 @@ scrollbar-color: var(--primary-nav-divider-color) var(--background-color); /* Ц
 
 /* пагинация */
 .pagination {
-display: flex;
-justify-content: center;
-gap: 10px;
-margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 0;	
 }
 
 .pagination a,
 .pagination span {
+	font-size: .9rem;
 display: inline-block;
-padding: 10px 15px;
+/* 	padding: 10px 15px; */
+padding: 3px 6px;
 background-color:var(--dove-gray);
 /* border: 1px solid #ddd; */
 color: var(--heading-color);
@@ -518,8 +522,14 @@ border-radius: 5px;
 }
 
 .pagination .current {
-	filter: invert(100%);
+/* 	filter: invert(100%); */
 	font-weight: bold;
+	font-size: 1rem;
+	padding: 6px 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color:white;
+	
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -533,6 +543,11 @@ background-size: cover;
 color: var(--header-text-color);
 }
 
+.sants {
+	background: url(assets/img/jpg/santa.jpg) bottom center no-repeat;
+	background-size: cover;	
+}
+
 .intro::before {
 content: '';
 position: absolute;
@@ -542,6 +557,10 @@ right: 0;
 bottom: 0;
 background: rgba(0, 0, 0, 0.5);
 z-index: 1; 
+}
+
+.sants::before {
+	background: rgba(0, 0, 0, 0.3);	
 }
 
 .intro h4 {
@@ -563,37 +582,74 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 z-index: 1;
-position: relative;
+position: relative;	
 }
 
+.search-btn {
+	color:#fff5ed;	
+	cursor:pointer;
+	position:absolute;
+	top:50px;
+	right:50px;
+	z-index:2;
+		
+}
+
+@media (max-width:768px) {
+	.search-btn {
+		top:90px;
+		right:30px
+		
+	}
+	
+}
+
+
 .intro_svg::after{
-content:'если лес не сохраним – жизнь угаснет вместе с ним';
-font-size: .9rem;  
-font-family: var(--font-familyVibes);
-font-weight: 100;
-font-style: italic;
-color:  var(--header-text-color);
-text-align: center;
-position: absolute;
-bottom: -100px;
-left: 0%;
-width: 100%;
+	content:'если лес не сохраним – жизнь угаснет вместе с ним';
+	font-size: .9rem;  
+	font-family: var(--font-familyVibes);
+	font-weight: 100;
+	font-style: italic;
+	color:  var(--header-text-color);
+	text-align: center;
+	position: absolute;
+	bottom: -100px;
+	left: 0%;
+	width: 100%;
+}
 
-
+.sants-svg::after {
+	content:'Пусть Рождество и Новый год принесут вам радость, счастье и множество светлых моментов!';
+	color:var(--golden-cream);
 }
 
 .logoSt0{
 fill:none;
-stroke:var(--inner-logo);
+stroke:var(--header-text-color);
 stroke-width:5;
 stroke-miterlimit:10;
 stroke-dasharray:4240;
 animation: strok2 2s linear;
 }
 
-.logoSt1{
-fill:var(--inner-logo);
+.logoSt1,
+.logoSnow{
+fill:var(--header-text-color);
 animation: check_c_o 1000ms linear 1 normal forwards
+}
+
+.logoSnow {
+	fill:white;
+}
+
+.sants-svg .logoSt0 {
+	stroke:var(--golden-cream);
+	
+}
+.sants-svg .logoSt1 {
+	fill:var(--golden-cream);
+	
 }
 
 @keyframes check_c_o {
@@ -601,11 +657,6 @@ animation: check_c_o 1000ms linear 1 normal forwards
 79% {opacity: 0}
 80% {opacity: 0.3}
 100% {opacity: 1}
-}
-
-.logoSt11{
-fill:var(--inner-logo);
-animation: check_c_o 1000ms linear 1 normal forwards
 }
 
 
@@ -625,12 +676,6 @@ animation: check_c_o 1000ms linear 1 normal forwards
 }
 }
 
-@keyframes strok {
-100% {
-    stroke-dashoffset: 400;
-}
-}
-/* produkt */
 
 .social {
  padding:60px 0;
@@ -853,9 +898,7 @@ border-radius: 35px;
     align-items: center;
 }
 
-.produkt_inner_slider,
-.quality_inner-img,
-.dalnee_inner-img {
+.produkt_inner_slider {
     display: none;
 }
 
@@ -892,7 +935,7 @@ margin: 0 auto;
 
 .logo {
 color: var(--inner-logo);
-
+position:relative;
 font-family: var(--font-logo);
 cursor: pointer;
 }
@@ -904,6 +947,20 @@ gap: 5px;
 font-style:normal;
 font-family: var(--font-logo);
 
+}
+
+.santa-cap::before {
+	content: '';  
+    position:absolute;
+	top:0;
+	left:0;
+	display:block;
+    width:15px;
+	height:15px;
+		
+    background-image: url('assets/img/svg/santa.svg');  
+    background-size: contain; /* или cover, в зависимости от предпочтений */  
+    background-repeat: no-repeat; /* чтобы изображение не повторялось */
 }
 
 .nav {  
@@ -1024,22 +1081,29 @@ header {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* popup */
 
-.popup {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: rgba(0, 0, 0, .8);
+.popup,
+.popup-search{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .8);
+	z-index:2;
+}
+
+.popup-search {
+	background-color: rgba(0, 0, 0, .9);
+	z-index:3;
 }
 
 .popup_inner {
 position: relative;
 width: fit-content; 
-max-width: 60vh;  
+max-width: 88vh;  
 border: 3px solid var(--primary-bg-color);
 box-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
@@ -1059,6 +1123,7 @@ right: 10px;
 border-radius: 100%;
 transition: all .3s ease-in-out;
 cursor: pointer;
+	user-select:none;
 }
 
 .close_popup::after,
@@ -1241,6 +1306,44 @@ max-height:50vw;
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* search-form */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.search-form {
+	display:flex;
+	align-items:center;
+}
+
+.search-field {
+	background: 0 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5em .75em;
+}
+
+.search-field:focus {	
+	background:transparent;
+	outline: none; 
+    border-bottom: 1px solid rgba(255, 255, 255, .3);	
+}
+
+.search-submit {
+	background:transparent;
+	color: rgba(255, 255, 255, .35);
+	font-size: 1.5rem;
+}
+
+.search-submit:hover {
+	background:transparent;
+	color: #fff;
+}
+
+
+
+  
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 /* 404.css */
@@ -1249,7 +1352,43 @@ max-height:50vw;
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
+/* snowflakes */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Снежинки не мешают взаимодействию с элементами */
+    z-index: 1000; /* Ставим их выше остальных элементов */
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background-color: #f1f5f9;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 1)
+; 
+    border-radius: 50%;
+    opacity: 0.8;
+	animation: fall linear infinite;	
+	
+
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(calc(-10px + 20vw));
+    }
+}
 
 
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 

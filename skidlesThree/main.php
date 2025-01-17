@@ -6,16 +6,17 @@
 
 ?>
 
-    <main>
+    <main>		
         <h1 style="font-size: 0;">Скидельский лесхоз – ваш надежный поставщик лесоматериалов и других продуктов</h1>
         <section class="intro">
-            <div class="intro_svg"></div>
+            <div class="intro_svg"></div> 
+			<i class="search-btn fa-solid fa-magnifying-glass"></i>
         </section>  
        
         
             <section class="produkt"> 
 				<div class="wrapper">
-                <div class="produkt_inner">
+                <div class="produkt_inner">			
                    <div class="produkt_inner_content">
                         <h3>выбирай</h3>
                         <h2>наша продукция</h2>                        
@@ -49,7 +50,7 @@
                     <div class="quality_inner-content">
                         <h2>качество наших услуг</h2>  
                         <p>Выскажите свое мнение о качестве нашего обслуживания, это поспособствует повышению качестваоказания услуг.</p>
-                        <a class="section-button" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/uslugi.pdf" target="_blank">
+                        <a class="section-button" href="<?php echo home_url(); ?>/nashi-uslugi">
                             <button>изучить цены на услуги</button>
                         </a> 
                     </div>
@@ -65,7 +66,7 @@
                         <p style="text-align: left;">"Дальнее" приглашает отдохнуть на берегу оз. Веровское, в 4 км. от а/г Поречье. Для отдыха населения построены летние домики и беседки. Тел: <a href="tel:+375152473042">+375(29)8624188</a> <a href="https://maps.app.goo.gl/FGg92JrwMABLD59TA" target="_blank"><i class="fa-solid fa-map-location-dot" style="color: #c8ab77; font-size: 1rem;"></i></a>
     
                         </p>
-                        <a class="section-button" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/doc/dalnee.pdf" target="_blank">
+                        <a class="section-button" href="<?php echo home_url(); ?>/baza-otdyha-dalnee">
                         <button>Узнать больше о базе отдыха</button>
                         </a> 
                     </div>  

@@ -38,10 +38,7 @@ get_header(); ?>
                                 ?>                            
 							<div>
 								<?php the_excerpt(); ?>
-							</div>                    
-<!--                             <div class="read-more">
-								<a href="<?php the_permalink(); ?>" > <i class="fa-solid fa-up-right-from-square"></i> Смотреть запись</a>
-							</div>                         -->
+							</div>   
                         </div>                      
                     </article>  
                 <?php endwhile; ?> 
@@ -51,16 +48,25 @@ get_header(); ?>
 				 </div>
 
                 <div class="pagination">  
-                    <?php  
-                    the_posts_pagination( array(  
-                        'mid_size'  => 2, // Количество страниц до и после текущей  
-                        'prev_text' => '← Назад',  
-                        'next_text' => 'Вперёд →',  
-                    ) );  
-                    ?>  
-                </div>  
+					<?php  
+						global $wp_query; // Получаем глобальный объект запроса  
 
-            
+						$big = 999999999; // Используемое значение для замены  
+						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // Текущая страница  
+
+						$pagination_args = array(
+							'base'         => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+							'format'       => '?paged=%#%',
+							'current'      => max(1, get_query_var('paged')),
+							'total'        => $wp_query->max_num_pages,
+							'prev_text'    => '←',
+							'next_text'    => '→',
+							'end_size'     => 1, // Количество ссылок в начале и в конце
+							'mid_size'     => 1, // Количество ссылок вокруг текущей страницы
+						);
+						echo paginate_links($pagination_args);
+					?>  
+                </div>  
         </div>  
     </section>  
 </main>  

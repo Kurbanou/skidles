@@ -13,6 +13,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
+	<div id="snowflakes"></div>
     <header>
         <div class="inner">           
             <div class="logo">

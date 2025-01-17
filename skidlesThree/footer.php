@@ -18,7 +18,7 @@
                 <h4 style="width: 250px;">Designed by Faridun Kurbanou kurbanou.faridun@gmail.com</h4>
             </div>
 
-        </div>  
+        </div> 		
     </footer>
     <?php wp_footer(); ?>
 
